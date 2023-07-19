@@ -12,6 +12,6 @@
 mutton りのもとだしふ 圓井 石黒
 # URL
 [miro](https://miro.com/app/board/uXjVM4W_zxA=/)
-# アプリURL
 [github](https://github.com/enpitut2023/omise-kimeru)
-
+# アプリURL
+[おみせきめーる](https://omise-kimeru.vercel.app/)
