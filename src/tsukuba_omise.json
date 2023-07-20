@@ -1,0 +1,961 @@
+{
+  "results": {
+    "@xmlns": "http://webservice.recruit.co.jp/HotPepper/",
+    "api_version": "1.26",
+    "results_available": "165",
+    "results_returned": "10",
+    "results_start": "1",
+    "shop": [
+      {
+        "id": "J000101735",
+        "name": "つくば山水亭 本店",
+        "logo_image": "https://imgfp.hotp.jp/IMGH/21/04/P037052104/P037052104_69.jpg",
+        "name_kana": "ツクバサンスイテイ　ホンテン",
+        "address": "茨城県つくば市小野崎254",
+        "station_name": "つくば",
+        "ktai_coupon": "0",
+        "large_service_area": {
+          "code": "SS10",
+          "name": "関東"
+        },
+        "service_area": {
+          "code": "SA15",
+          "name": "茨城"
+        },
+        "large_area": {
+          "code": "Z015",
+          "name": "茨城"
+        },
+        "middle_area": {
+          "code": "Y925",
+          "name": "つくば"
+        },
+        "small_area": {
+          "code": "X587",
+          "name": "つくば駅"
+        },
+        "lat": "36.074920723",
+        "lng": "140.1003298532",
+        "genre": {
+          "code": "G004",
+          "name": "和食",
+          "catch": "２名様から【完全個室】極上の大人時間。"
+        },
+        "sub_genre": {
+          "code": "G005",
+          "name": "洋食"
+        },
+        "budget": {
+          "code": "B005",
+          "name": "7001～10000円",
+          "average": "会席・鉄板7150円～日本焼肉6600円～祝9900円～※別途サービス料"
+        },
+        "budget_memo": null,
+        "catch": "全ての部屋が【完全個室】 サプライズにおススメ！",
+        "capacity": "400",
+        "access": "つくば駅から車で５分・研究学園駅から車で７分　入口では仁王像が皆様をお出迎えしてくれます",
+        "mobile_access": "つくば駅から車で5分 入口の仁王像が目印",
+        "urls": {
+          "pc": "https://www.hotpepper.jp/strJ000101735/?vos=nhppalsa000016"
+        },
+        "open": "月、火、木～日、祝日: 11:00～15:30 （料理L.O. 13:30 ドリンクL.O. 15:00）17:00～21:30 （料理L.O. 19:30 ドリンクL.O. 21:00）",
+        "close": "水",
+        "party_capacity": "200",
+        "wifi": "あり",
+        "other_memo": "HPにて３６０度見渡せるマップ（館内を散策しているかのようにご覧いただけます）",
+        "shop_detail_memo": null,
+        "wedding": "各種パーティー・披露宴・研修会等、あらゆる用途に対応できます。",
+        "free_drink": "あり ：つくば山水亭ホームページをご確認ください",
+        "free_food": "なし",
+        "private_room": "あり ：全てのお部屋が完全個室です。",
+        "horigotatsu": "なし ：掘りごたつの個室はございます。",
+        "tatami": "なし",
+        "card": "利用可",
+        "non_smoking": "全面禁煙",
+        "charter": "貸切不可",
+        "parking": "あり ：200台収容大型駐車場完備しております。",
+        "barrier_free": "あり",
+        "show": "なし",
+        "karaoke": "なし",
+        "band": "不可",
+        "tv": "なし",
+        "english": "なし",
+        "pet": "不可",
+        "child": "お子様連れ歓迎 ：お子様向けのメニューもございますのでご安心ください。",
+        "coupon_urls": {
+          "pc": "https://www.hotpepper.jp/strJ000101735/map/?vos=nhppalsa000016",
+          "sp": "https://www.hotpepper.jp/strJ000101735/scoupon/?vos=nhppalsa000016"
+        },
+        "course": "あり",
+        "photo": {
+          "pc": {
+            "l": "https://imgfp.hotp.jp/IMGH/95/33/P042089533/P042089533_238.jpg",
+            "m": "https://imgfp.hotp.jp/IMGH/95/33/P042089533/P042089533_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/95/33/P042089533/P042089533_58_s.jpg"
+          },
+          "mobile": {
+            "l": "https://imgfp.hotp.jp/IMGH/95/33/P042089533/P042089533_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/95/33/P042089533/P042089533_100.jpg"
+          }
+        },
+        "lunch": "あり",
+        "midnight": "営業していない"
+      },
+      {
+        "id": "J001133408",
+        "name": "スパニッシュバル ボニート Spanish Bar Bonito",
+        "logo_image": "https://imgfp.hotp.jp/IMGH/36/26/P024063626/P024063626_69.jpg",
+        "name_kana": "すぱにっしゅばるぼにーと",
+        "address": "茨城県つくば市東新井17-3　クローバーテナント1－A",
+        "station_name": "つくば",
+        "ktai_coupon": "0",
+        "large_service_area": {
+          "code": "SS10",
+          "name": "関東"
+        },
+        "service_area": {
+          "code": "SA15",
+          "name": "茨城"
+        },
+        "large_area": {
+          "code": "Z015",
+          "name": "茨城"
+        },
+        "middle_area": {
+          "code": "Y925",
+          "name": "つくば"
+        },
+        "small_area": {
+          "code": "X587",
+          "name": "つくば駅"
+        },
+        "lat": "36.0782314847",
+        "lng": "140.1114257174",
+        "genre": {
+          "code": "G002",
+          "name": "ダイニングバー・バル",
+          "catch": "つくば駅近 気軽にスペインバルを楽しめる"
+        },
+        "sub_genre": {
+          "code": "G001",
+          "name": "居酒屋"
+        },
+        "budget": {
+          "code": "B003",
+          "name": "3001～4000円",
+          "average": "ランチ1100円　　ディナー3000円"
+        },
+        "budget_memo": "ディナーはお一人様テーブルチャージ330円(税込)",
+        "catch": "特別なお祝いは当店で♪ 毎日開催ハッピーアワー！",
+        "capacity": "40",
+        "access": "TXつくば駅、JALシティつくば、ホテル東雲、ダイワロイネットホテル、ホテルつくばヒルズ学園西大通り店様から徒歩5分",
+        "mobile_access": "TXつくば駅徒歩5分",
+        "urls": {
+          "pc": "https://www.hotpepper.jp/strJ001133408/?vos=nhppalsa000016"
+        },
+        "open": "月、水、金、祝前日: 11:30～14:30 （料理L.O. 13:30 ドリンクL.O. 14:00）17:30～23:00 （料理L.O. 22:00 ドリンクL.O. 22:30）火: 17:30～23:00木: 17:30～23:00 （料理L.O. 22:00 ドリンクL.O. 22:30）土: 11:30～15:00 （料理L.O. 14:00 ドリンクL.O. 14:30）17:30～23:00 （料理L.O. 22:00 ドリンクL.O. 22:30）日、祝日: 11:30～15:00 （料理L.O. 14:00 ドリンクL.O. 14:30）17:00～22:00 （料理L.O. 21:00 ドリンクL.O. 21:30）",
+        "close": "※季節によりお休みを頂きます。店舗までお問い合わせ下さい※貸切等の状況もございますのでご不明な点はご連絡下さい。",
+        "party_capacity": "60",
+        "wifi": "あり",
+        "other_memo": "サプライズなどは経験豊富なスタッフが全力でサポートします☆",
+        "shop_detail_memo": "フラメンコ生ライブあります。各種飲み放題コースご用意しております☆",
+        "wedding": "少人数～最大60名様までOK！貸切可。誕生日や結婚式2次会の演出のお手伝いします！！",
+        "free_drink": "あり ：種類豊富にご用意しております☆CAVA付☆",
+        "free_food": "なし ：食べ放題のご用意はございませんが様々なスペイン料理を愉しんで頂けます",
+        "private_room": "なし ：昼間15名様以上/夜20名様以上で貸切も可能です☆ボニートスタッフまでお気軽にお問合せ下さい♪",
+        "horigotatsu": "なし ：ご宴会・パーティー・誕生日・記念日・結婚式2次会等の相談はお気軽にBonitoスタッフまでお問合せ下さい!",
+        "tatami": "なし ：店内はすべてテーブル席となりますが、人数によって席のアレンジは自由自在です◎",
+        "card": "利用可",
+        "non_smoking": "全面禁煙",
+        "charter": "貸切可 ：昼間15名様以上/夜20名様以上で貸切も可能です☆ボニートスタッフまでお気軽にお問合せ下さい♪",
+        "parking": "あり ：提携コインパーキング有(5時間まで無料です)",
+        "barrier_free": "なし ：入口とトイレ前に多少段差がございます。ボニートスタッフがお手伝いさせて頂きます♪",
+        "show": "あり",
+        "karaoke": "なし",
+        "band": "不可",
+        "tv": "あり",
+        "english": "あり",
+        "pet": "不可",
+        "child": "お子様連れOK ：チャイルドシート完備しております。パパ会・ママ会も承ります◎",
+        "coupon_urls": {
+          "pc": "https://www.hotpepper.jp/strJ001133408/map/?vos=nhppalsa000016",
+          "sp": "https://www.hotpepper.jp/strJ001133408/scoupon/?vos=nhppalsa000016"
+        },
+        "course": "あり",
+        "photo": {
+          "pc": {
+            "l": "https://imgfp.hotp.jp/IMGH/72/34/P031247234/P031247234_238.jpg",
+            "m": "https://imgfp.hotp.jp/IMGH/72/34/P031247234/P031247234_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/72/34/P031247234/P031247234_58_s.jpg"
+          },
+          "mobile": {
+            "l": "https://imgfp.hotp.jp/IMGH/72/34/P031247234/P031247234_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/72/34/P031247234/P031247234_100.jpg"
+          }
+        },
+        "lunch": "あり",
+        "midnight": "営業していない"
+      },
+      {
+        "id": "J001142908",
+        "name": "鳥のや 總本店",
+        "logo_image": "https://imgfp.hotp.jp/IMGH/11/62/P031461162/P031461162_69.jpg",
+        "name_kana": "とりのやそうほんてん",
+        "address": "茨城県つくば市研究学園５-１４-１０",
+        "station_name": "研究学園",
+        "ktai_coupon": "0",
+        "large_service_area": {
+          "code": "SS10",
+          "name": "関東"
+        },
+        "service_area": {
+          "code": "SA15",
+          "name": "茨城"
+        },
+        "large_area": {
+          "code": "Z015",
+          "name": "茨城"
+        },
+        "middle_area": {
+          "code": "Y925",
+          "name": "つくば"
+        },
+        "small_area": {
+          "code": "XC00",
+          "name": "研究学園"
+        },
+        "lat": "36.0834998857",
+        "lng": "140.0847708216",
+        "genre": {
+          "code": "G001",
+          "name": "居酒屋",
+          "catch": "研究学園駅徒歩3分！完全個室×炭火焼鳥"
+        },
+        "sub_genre": {
+          "code": "G004",
+          "name": "和食"
+        },
+        "budget": {
+          "code": "B003",
+          "name": "3001～4000円",
+          "average": "4000円"
+        },
+        "budget_memo": "※表示している金額はすべて税抜価格です。",
+        "catch": "全席総個室！2～20名様迄 鶏にとことんこだわります",
+        "capacity": "50",
+        "access": "つくばエクスプレス 研究学園駅 徒歩3分",
+        "mobile_access": "つくばｴｸｽﾌﾟﾚｽ 研究学園駅 徒歩3分",
+        "urls": {
+          "pc": "https://www.hotpepper.jp/strJ001142908/?vos=nhppalsa000016"
+        },
+        "open": "月～土、祝日、祝前日: 17:00～翌0:00 （料理L.O. 23:30 ドリンクL.O. 23:30）",
+        "close": "日",
+        "party_capacity": "50",
+        "wifi": "なし",
+        "other_memo": null,
+        "shop_detail_memo": null,
+        "wedding": "応相談",
+        "free_drink": "あり ：種類豊富にご用意しております",
+        "free_food": "なし ：当店では食べ放題メニューはご用意しておりません。",
+        "private_room": "あり ：個室もしっかり完備しております！ご希望のお客様はお気軽にお問いあわせください",
+        "horigotatsu": "あり ：掘りごたつ個室ご希望のお客様はお気軽にお問い合わせください",
+        "tatami": "なし",
+        "card": "利用可",
+        "non_smoking": "禁煙席なし",
+        "charter": "貸切不可",
+        "parking": "なし ：お近くのコインパーキングをご利用下さい",
+        "barrier_free": "なし ：各種ご宴会等お気軽にご連絡ください！",
+        "show": "なし",
+        "karaoke": "なし",
+        "band": "不可",
+        "tv": "なし",
+        "english": "なし",
+        "pet": "不可",
+        "child": "お子様連れ不可",
+        "coupon_urls": {
+          "pc": "https://www.hotpepper.jp/strJ001142908/map/?vos=nhppalsa000016",
+          "sp": "https://www.hotpepper.jp/strJ001142908/scoupon/?vos=nhppalsa000016"
+        },
+        "course": "あり",
+        "photo": {
+          "pc": {
+            "l": "https://imgfp.hotp.jp/IMGH/78/41/P025787841/P025787841_238.jpg",
+            "m": "https://imgfp.hotp.jp/IMGH/78/41/P025787841/P025787841_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/78/41/P025787841/P025787841_58_s.jpg"
+          },
+          "mobile": {
+            "l": "https://imgfp.hotp.jp/IMGH/78/41/P025787841/P025787841_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/78/41/P025787841/P025787841_100.jpg"
+          }
+        },
+        "lunch": "なし",
+        "midnight": "営業している"
+      },
+      {
+        "id": "J000763985",
+        "name": "季彩 かがり",
+        "logo_image": "https://imgfp.hotp.jp/IMGH/68/16/P033246816/P033246816_69.jpg",
+        "name_kana": "きさい　かがり",
+        "address": "茨城県つくば市竹園１－９－２　デイズタウンB１F",
+        "station_name": "つくば",
+        "ktai_coupon": "0",
+        "large_service_area": {
+          "code": "SS10",
+          "name": "関東"
+        },
+        "service_area": {
+          "code": "SA15",
+          "name": "茨城"
+        },
+        "large_area": {
+          "code": "Z015",
+          "name": "茨城"
+        },
+        "middle_area": {
+          "code": "Y925",
+          "name": "つくば"
+        },
+        "small_area": {
+          "code": "X587",
+          "name": "つくば駅"
+        },
+        "lat": "36.0777194271",
+        "lng": "140.1153451276",
+        "genre": {
+          "code": "G001",
+          "name": "居酒屋",
+          "catch": "五感で楽しむ、季節を彩る和風居酒屋"
+        },
+        "sub_genre": {
+          "code": "G004",
+          "name": "和食"
+        },
+        "budget": {
+          "code": "B008",
+          "name": "4001～5000円",
+          "average": "ランチ：780円～　ディナー：4000円　宴会：4500円"
+        },
+        "budget_memo": "お通し代：350円（ディナー）",
+        "catch": "日本料理コンクール大臣賞 PERFECT黒ラベル認定店",
+        "capacity": "54",
+        "access": "「かがり」はつくばエクスプレスつくば駅より徒歩5分。デイズタウン内。女子会・ランチ宴会大好評です。個室も完備です",
+        "mobile_access": "つくばｴｸｽﾌﾟﾚｽつくば駅徒歩5分｡ﾃﾞｲｽﾞﾀｳﾝ内",
+        "urls": {
+          "pc": "https://www.hotpepper.jp/strJ000763985/?vos=nhppalsa000016"
+        },
+        "open": "月～土、祝日、祝前日: 11:30～14:00 （料理L.O. 13:30 ドリンクL.O. 13:30）17:00～翌0:00 （料理L.O. 23:30 ドリンクL.O. 23:30）",
+        "close": "日",
+        "party_capacity": "65",
+        "wifi": "あり",
+        "other_memo": "宴会は「かがり」までご連絡ください",
+        "shop_detail_memo": "仕出し弁当2000円／3000円ご用意ございます。コースページをご覧下さい。",
+        "wedding": "法事・結納などでご利用可。用途につきましてはお気軽にお問い合わせください",
+        "free_drink": "あり ：※飲み放題はコース料金に含まれております。飲み放題に生ビールをつける場合+500円となります。",
+        "free_food": "なし ：食べ放題のご用意はございません。",
+        "private_room": "あり ：個室有：お席等はお気軽に「かがり」までお問い合わせください",
+        "horigotatsu": "あり ：50～65名様でご利用いただけます。「かがり」までお気軽にお問い合わせください",
+        "tatami": "なし ：座敷席有：お席等は「かがり」までお気軽にお問い合わせください",
+        "card": "利用可",
+        "non_smoking": "全面禁煙",
+        "charter": "貸切可 ：貸切での宴会も随時受け付けております☆各種宴会はまずは「かがり」へご連絡ください",
+        "parking": "あり ：共有駐車場700台　デイズタウン内駐車場有",
+        "barrier_free": "なし ：車いすで入店可※バリアフリーの詳細は「かがり」までお問合せください",
+        "show": "なし",
+        "karaoke": "なし",
+        "band": "不可",
+        "tv": "なし",
+        "english": "なし",
+        "pet": "不可",
+        "child": "お子様連れ不可 ：お子様連れでのご入店はできません。ご了承ください。",
+        "coupon_urls": {
+          "pc": "https://www.hotpepper.jp/strJ000763985/map/?vos=nhppalsa000016",
+          "sp": "https://www.hotpepper.jp/strJ000763985/scoupon/?vos=nhppalsa000016"
+        },
+        "course": "あり",
+        "photo": {
+          "pc": {
+            "l": "https://imgfp.hotp.jp/IMGH/09/03/P037430903/P037430903_238.jpg",
+            "m": "https://imgfp.hotp.jp/IMGH/09/03/P037430903/P037430903_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/09/03/P037430903/P037430903_58_s.jpg"
+          },
+          "mobile": {
+            "l": "https://imgfp.hotp.jp/IMGH/09/03/P037430903/P037430903_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/09/03/P037430903/P037430903_100.jpg"
+          }
+        },
+        "lunch": "あり",
+        "midnight": "営業している"
+      },
+      {
+        "id": "J001108652",
+        "name": "東京バル つくば",
+        "logo_image": "https://imgfp.hotp.jp/IMGH/76/69/P023387669/P023387669_69.jpg",
+        "name_kana": "とうきょうばる",
+        "address": "茨城県つくば市研究学園５丁目１５番７",
+        "station_name": "研究学園",
+        "ktai_coupon": "0",
+        "large_service_area": {
+          "code": "SS10",
+          "name": "関東"
+        },
+        "service_area": {
+          "code": "SA15",
+          "name": "茨城"
+        },
+        "large_area": {
+          "code": "Z015",
+          "name": "茨城"
+        },
+        "middle_area": {
+          "code": "Y925",
+          "name": "つくば"
+        },
+        "small_area": {
+          "code": "XC00",
+          "name": "研究学園"
+        },
+        "lat": "36.0837970483",
+        "lng": "140.0838136685",
+        "genre": {
+          "code": "G001",
+          "name": "居酒屋",
+          "catch": "イタリアン　ワイン　バル　誕生日　デート"
+        },
+        "sub_genre": {
+          "code": "G006",
+          "name": "イタリアン・フレンチ"
+        },
+        "budget": {
+          "code": "B003",
+          "name": "3001～4000円",
+          "average": "￥3500"
+        },
+        "budget_memo": "表示価格は税抜価格になっております。別途消費税がかかります。",
+        "catch": "サプライズは東京バルで♪ 当日OK！単品飲み放題",
+        "capacity": "82",
+        "access": "研究学園駅から徒歩3分",
+        "mobile_access": "研究学園駅より徒歩3分",
+        "urls": {
+          "pc": "https://www.hotpepper.jp/strJ001108652/?vos=nhppalsa000016"
+        },
+        "open": "月～日: 17:00～翌0:00 （料理L.O. 23:00 ドリンクL.O. 23:30）",
+        "close": "不定休",
+        "party_capacity": "120",
+        "wifi": "なし",
+        "other_memo": "プロジェクターなどもお持込OKです！(お店に準備はございません)",
+        "shop_detail_memo": "不明点など、お気軽に東京バル TAKEOへご連絡下さい",
+        "wedding": "お気軽にご相談ください♪スタッフ一同全力でサポートさせていただきます♪",
+        "free_drink": "あり ：ビール、ハードシードルなど多ジャンルのメニューをご用意しております☆",
+        "free_food": "なし ：食べ放題は実施しておりません。",
+        "private_room": "なし ：半個室。20名まで可能です☆お席などはお気軽にお問い合わせください☆",
+        "horigotatsu": "なし ：掘りごたつのご用意はございません。お席はお気軽にお問い合わせください♪",
+        "tatami": "なし ：座敷席のご用意はございません。お席などお気軽にお問い合わせください☆",
+        "card": "利用可",
+        "non_smoking": "全面禁煙",
+        "charter": "貸切可 ：60名からＯＫ★幹事様！！忘年会・新年会などの宴会は東京バルまでお問い合わせください！",
+        "parking": "なし ：近隣のパーキングをご利用ください。飲酒運転はご遠慮ください。",
+        "barrier_free": "なし ：お手洗いが対応しておりません。お電話にてお問い合わせください☆",
+        "show": "あり",
+        "karaoke": "なし",
+        "band": "不可",
+        "tv": "あり",
+        "english": "なし",
+        "pet": "不可",
+        "child": "お子様連れOK ：ご家族でのご利用もお待ちしております☆",
+        "coupon_urls": {
+          "pc": "https://www.hotpepper.jp/strJ001108652/map/?vos=nhppalsa000016",
+          "sp": "https://www.hotpepper.jp/strJ001108652/scoupon/?vos=nhppalsa000016"
+        },
+        "course": "あり",
+        "photo": {
+          "pc": {
+            "l": "https://imgfp.hotp.jp/IMGH/82/74/P042078274/P042078274_238.jpg",
+            "m": "https://imgfp.hotp.jp/IMGH/82/74/P042078274/P042078274_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/82/74/P042078274/P042078274_58_s.jpg"
+          },
+          "mobile": {
+            "l": "https://imgfp.hotp.jp/IMGH/82/74/P042078274/P042078274_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/82/74/P042078274/P042078274_100.jpg"
+          }
+        },
+        "lunch": "なし",
+        "midnight": "営業している"
+      },
+      {
+        "id": "J001233518",
+        "name": "彩鳥鶏 いろとりどり つくば",
+        "logo_image": "https://imgfp.hotp.jp/IMGH/76/69/P035947669/P035947669_69.jpg",
+        "name_kana": "ぜんせきこしついざかや　いろとりどり",
+        "address": "茨城県つくば市研究学園４-2-14 エビスタウン1F",
+        "station_name": "研究学園",
+        "ktai_coupon": "0",
+        "large_service_area": {
+          "code": "SS10",
+          "name": "関東"
+        },
+        "service_area": {
+          "code": "SA15",
+          "name": "茨城"
+        },
+        "large_area": {
+          "code": "Z015",
+          "name": "茨城"
+        },
+        "middle_area": {
+          "code": "Y925",
+          "name": "つくば"
+        },
+        "small_area": {
+          "code": "XC00",
+          "name": "研究学園"
+        },
+        "lat": "36.0854775752",
+        "lng": "140.0795320188",
+        "genre": {
+          "code": "G001",
+          "name": "居酒屋",
+          "catch": "本格炭火焼鳥を落ち着いた店内で…♪"
+        },
+        "sub_genre": {
+          "code": "G003",
+          "name": "創作料理"
+        },
+        "budget": {
+          "code": "B003",
+          "name": "3001～4000円",
+          "average": "4000円"
+        },
+        "budget_memo": "※表示している金額はすべて税抜価格です。",
+        "catch": "厳選日本酒も種類豊富 ウイルス対策強化実施中",
+        "capacity": "46",
+        "access": "つくばエクスプレス 研究学園駅 徒歩5分",
+        "mobile_access": "つくばｴｸｽﾌﾟﾚｽ 研究学園駅 徒歩5分",
+        "urls": {
+          "pc": "https://www.hotpepper.jp/strJ001233518/?vos=nhppalsa000016"
+        },
+        "open": "月～日、祝日、祝前日: 17:00～翌1:00 （料理L.O. 翌0:30 ドリンクL.O. 翌0:30）",
+        "close": "当店は不定休となります",
+        "party_capacity": "30",
+        "wifi": "なし",
+        "other_memo": null,
+        "shop_detail_memo": "各種飲み放題コースご用意しております☆",
+        "wedding": "応相談",
+        "free_drink": "あり ：種類豊富にご用意しております☆",
+        "free_food": "なし ：当店では食べ放題メニューはご用意しておりません。",
+        "private_room": "あり ：個室もしっかり完備しております☆ご希望のお客様はお気軽にお問いあわせください☆",
+        "horigotatsu": "あり ：掘りごたつご希望のお客様はお気軽にお問い合わせください☆",
+        "tatami": "あり ：お席のアレンジ可能です！お気軽にお問い合わせください☆",
+        "card": "利用可",
+        "non_smoking": "禁煙席なし",
+        "charter": "貸切不可 ：ご宴会のお席アレンジ等はお気軽に店舗へお問い合わせください♪",
+        "parking": "あり ：共用パーキング有。お酒を飲まれての運転はご遠慮ください。",
+        "barrier_free": "なし ：各種ご宴会等お気軽にご連絡ください☆",
+        "show": "なし",
+        "karaoke": "なし",
+        "band": "不可",
+        "tv": "なし",
+        "english": "なし",
+        "pet": "不可",
+        "child": "お子様連れ不可 ：ご家族でのお食事にもぜひご利用ください☆",
+        "coupon_urls": {
+          "pc": "https://www.hotpepper.jp/strJ001233518/map/?vos=nhppalsa000016",
+          "sp": "https://www.hotpepper.jp/strJ001233518/scoupon/?vos=nhppalsa000016"
+        },
+        "course": "あり",
+        "photo": {
+          "pc": {
+            "l": "https://imgfp.hotp.jp/IMGH/76/75/P035947675/P035947675_238.jpg",
+            "m": "https://imgfp.hotp.jp/IMGH/76/75/P035947675/P035947675_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/76/75/P035947675/P035947675_58_s.jpg"
+          },
+          "mobile": {
+            "l": "https://imgfp.hotp.jp/IMGH/76/75/P035947675/P035947675_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/76/75/P035947675/P035947675_100.jpg"
+          }
+        },
+        "lunch": "なし",
+        "midnight": "営業している"
+      },
+      {
+        "id": "J003388316",
+        "name": "シャブシャブアキラ",
+        "logo_image": "https://imgfp.hotp.jp/IMGH/61/37/P040476137/P040476137_69.jpg",
+        "name_kana": "しゃぶしゃぶあきら",
+        "address": "茨城県つくば市研究学園５-14-3リベルタビル1階",
+        "station_name": "研究学園",
+        "ktai_coupon": "1",
+        "large_service_area": {
+          "code": "SS10",
+          "name": "関東"
+        },
+        "service_area": {
+          "code": "SA15",
+          "name": "茨城"
+        },
+        "large_area": {
+          "code": "Z015",
+          "name": "茨城"
+        },
+        "middle_area": {
+          "code": "Y925",
+          "name": "つくば"
+        },
+        "small_area": {
+          "code": "XC00",
+          "name": "研究学園"
+        },
+        "lat": "36.0837556929",
+        "lng": "140.0848735801",
+        "genre": {
+          "code": "G004",
+          "name": "和食",
+          "catch": "しゃぶしゃぶ/研究学園/つくば/接待/デート"
+        },
+        "sub_genre": {
+          "code": "G003",
+          "name": "創作料理"
+        },
+        "budget": {
+          "code": "B004",
+          "name": "5001～7000円",
+          "average": "ディナー7000円"
+        },
+        "budget_memo": "paypayは1月ごろから導入の予定です。",
+        "catch": "厳選食材のしゃぶしゃぶ 2名様専用個室ございます",
+        "capacity": "18",
+        "access": "研究学園駅から徒歩5分",
+        "mobile_access": "研究学園駅から徒歩5分",
+        "urls": {
+          "pc": "https://www.hotpepper.jp/strJ003388316/?vos=nhppalsa000016"
+        },
+        "open": "月、水～日: 18:00～翌2:00 （料理L.O. 22:00 ドリンクL.O. 22:00）",
+        "close": "火",
+        "party_capacity": "18",
+        "wifi": "なし",
+        "other_memo": null,
+        "shop_detail_memo": null,
+        "wedding": "ウェディングや結婚式二次会もお気軽にご相談ください。",
+        "free_drink": "なし ：シャブシャブアキラに飲み放題はございません。",
+        "free_food": "なし ：シャブシャブアキラに食べ放題はございません。",
+        "private_room": "あり ：シャブシャブアキラには個室席が3つございます。",
+        "horigotatsu": "なし ：シャブシャブアキラに掘りごたつ席はございません。",
+        "tatami": "なし ：シャブシャブアキラに座敷席はございません。",
+        "card": "利用可",
+        "non_smoking": "全面禁煙",
+        "charter": "貸切不可 ：貸切のご相談はお気軽にお問い合わせください。",
+        "parking": "なし ：車でお越しの方はお近くの有料駐車場をご利用ください。",
+        "barrier_free": "あり ：シャブシャブアキラは1Fにございます。お気をつけてお越しくださいませ。",
+        "show": "なし",
+        "karaoke": "なし",
+        "band": "不可",
+        "tv": "なし",
+        "english": "なし",
+        "pet": "不可",
+        "child": "お子様連れ歓迎 ：個室席もございますので、お気軽にご相談ください。",
+        "coupon_urls": {
+          "pc": "https://www.hotpepper.jp/strJ003388316/map/?vos=nhppalsa000016",
+          "sp": "https://www.hotpepper.jp/strJ003388316/scoupon/?vos=nhppalsa000016"
+        },
+        "course": "あり",
+        "photo": {
+          "pc": {
+            "l": "https://imgfp.hotp.jp/IMGH/71/30/P040707130/P040707130_238.jpg",
+            "m": "https://imgfp.hotp.jp/IMGH/71/30/P040707130/P040707130_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/71/30/P040707130/P040707130_58_s.jpg"
+          },
+          "mobile": {
+            "l": "https://imgfp.hotp.jp/IMGH/71/30/P040707130/P040707130_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/71/30/P040707130/P040707130_100.jpg"
+          }
+        },
+        "lunch": "なし",
+        "midnight": "営業していない"
+      },
+      {
+        "id": "J001200635",
+        "name": "煮込み 肴 牛カツ アポロ",
+        "logo_image": "https://imgfp.hotp.jp/IMGH/01/47/P037800147/P037800147_69.jpg",
+        "name_kana": "にこみ・さかな・ぎゅうかつ　あぽろ",
+        "address": "茨城県つくば市竹園１丁目9-2　デイズタウンつくば１F",
+        "station_name": "つくば",
+        "ktai_coupon": "0",
+        "large_service_area": {
+          "code": "SS10",
+          "name": "関東"
+        },
+        "service_area": {
+          "code": "SA15",
+          "name": "茨城"
+        },
+        "large_area": {
+          "code": "Z015",
+          "name": "茨城"
+        },
+        "middle_area": {
+          "code": "Y925",
+          "name": "つくば"
+        },
+        "small_area": {
+          "code": "X587",
+          "name": "つくば駅"
+        },
+        "lat": "36.0776149919",
+        "lng": "140.11525014",
+        "genre": {
+          "code": "G001",
+          "name": "居酒屋",
+          "catch": "プレミアム食事券/地域共通クーポン使える"
+        },
+        "sub_genre": {
+          "code": "G004",
+          "name": "和食"
+        },
+        "budget": {
+          "code": "B003",
+          "name": "3001～4000円",
+          "average": "3000円"
+        },
+        "budget_memo": "キャッシュレスのお支払いで5％還元！ デビットカード利用可能",
+        "catch": "誕生日・記念日のお祝い♪ 忘年会向けコース",
+        "capacity": "40",
+        "access": "つくば駅徒歩5分",
+        "mobile_access": "つくばﾃﾞｲｽﾞﾀｳﾝ",
+        "urls": {
+          "pc": "https://www.hotpepper.jp/strJ001200635/?vos=nhppalsa000016"
+        },
+        "open": "月～日: 17:00～翌2:00 （料理L.O. 翌1:00 ドリンクL.O. 翌1:30）",
+        "close": "つくばでの宴会や飲み会にぴったりな飲み放題プランをコースにお付けしております！居酒屋宴会をお考えなら是非当店へ！",
+        "party_capacity": "40",
+        "wifi": "未確認",
+        "other_memo": "気軽な飲み会や宴会等にぴったりなテーブル席を多数ご用意しております！！",
+        "shop_detail_memo": "ご宴会でのご利用にてご予算やご利用人数のご相談は、お気軽に当店までお問い合わせください。",
+        "wedding": "宴会や飲み会は勿論、女子会や合コンなどの様々なシーンに是非ご利用下さい。",
+        "free_drink": "あり ：飲み放題プラン付きのコース料理をご用意致しております！各種ご宴会利用に是非ご利用下さい。",
+        "free_food": "なし ：当店では食べ放題プランはご用意致しておりません。また、飲み放題付きのコースを多数ご用意しております！",
+        "private_room": "なし ：最大6名様までご利用いただける個室席も完備しております！個室席は完全個室にてご案内しております。",
+        "horigotatsu": "なし ：大変申し訳ございませんが、掘りごたつ席をご用意しておりません。詳細は当店までお問い合わせ下さい。",
+        "tatami": "なし ：大変申し訳ございませんが、当店ではお座敷席をご用意しておりません。詳細は当店までお問い合わせ下さい。",
+        "card": "利用可",
+        "non_smoking": "禁煙席なし",
+        "charter": "貸切不可 ：大型のご宴会利用にて、人数次第では貸切でのご利用も承っております。お気軽にご相談ください。",
+        "parking": "あり ：共有駐車場700台までご利用可能です。その他公共の交通機関を利用してもお越し頂けます。",
+        "barrier_free": "なし ：当店ではバリアフリー設備を完備しておりません。お手伝いが必要な際はスタッフまでお声がけください。",
+        "show": "なし",
+        "karaoke": "なし",
+        "band": "不可",
+        "tv": "なし",
+        "english": "なし",
+        "pet": "不可",
+        "child": "お子様連れOK ：お子様連れのご家族のお客様も安心してご利用いただけます！お気軽に当店をご利用下さい。",
+        "coupon_urls": {
+          "pc": "https://www.hotpepper.jp/strJ001200635/map/?vos=nhppalsa000016",
+          "sp": "https://www.hotpepper.jp/strJ001200635/scoupon/?vos=nhppalsa000016"
+        },
+        "course": "あり",
+        "photo": {
+          "pc": {
+            "l": "https://imgfp.hotp.jp/IMGH/93/78/P038799378/P038799378_238.jpg",
+            "m": "https://imgfp.hotp.jp/IMGH/93/78/P038799378/P038799378_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/93/78/P038799378/P038799378_58_s.jpg"
+          },
+          "mobile": {
+            "l": "https://imgfp.hotp.jp/IMGH/93/78/P038799378/P038799378_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/93/78/P038799378/P038799378_100.jpg"
+          }
+        },
+        "lunch": "なし",
+        "midnight": "営業している"
+      },
+      {
+        "id": "J001128730",
+        "name": "びすとろ椿々 cin‐cin 追越店",
+        "logo_image": "https://imgfp.hotp.jp/IMGH/24/86/P022882486/P022882486_69.jpg",
+        "name_kana": "イタリアンサカバビストロチンチンオイコシテン",
+        "address": "茨城県つくば市天久保１－１０－１",
+        "station_name": "つくば",
+        "ktai_coupon": "0",
+        "large_service_area": {
+          "code": "SS10",
+          "name": "関東"
+        },
+        "service_area": {
+          "code": "SA15",
+          "name": "茨城"
+        },
+        "large_area": {
+          "code": "Z015",
+          "name": "茨城"
+        },
+        "middle_area": {
+          "code": "Y925",
+          "name": "つくば"
+        },
+        "small_area": {
+          "code": "X613",
+          "name": "つくば駅北・筑波大学"
+        },
+        "lat": "36.0943973139",
+        "lng": "140.1069243203",
+        "genre": {
+          "code": "G002",
+          "name": "ダイニングバー・バル",
+          "catch": "樽生スパークリング×お気軽イタリアン♪"
+        },
+        "sub_genre": {
+          "code": "G001",
+          "name": "居酒屋"
+        },
+        "budget": {
+          "code": "B002",
+          "name": "2001～3000円",
+          "average": "2800円"
+        },
+        "budget_memo": "お通し代300円頂いております。",
+        "catch": "少人数～大人数宴会に 2H飲み放題女子会3500円♪",
+        "capacity": "45",
+        "access": "つくば駅車7分。 駐車場が近くに有りサービスチケット出します。（天久保第3駐車場）",
+        "mobile_access": "ﾊﾞｽ追越宿舎東すぐ｡つくば駅から車で7分｡",
+        "urls": {
+          "pc": "https://www.hotpepper.jp/strJ001128730/?vos=nhppalsa000016"
+        },
+        "open": "月～土、祝日、祝前日: 17:00～翌0:00 （料理L.O. 23:00 ドリンクL.O. 23:00）",
+        "close": "日",
+        "party_capacity": "35",
+        "wifi": "なし",
+        "other_memo": "その他「びすとろ椿々（ちんちん）追越店」までお問い合わせください",
+        "shop_detail_memo": "その他「びすとろ椿々（ちんちん）追越店」までお問い合わせください",
+        "wedding": "要相談",
+        "free_drink": "あり ：宴会コース限定でついてくる！！",
+        "free_food": "なし ：無",
+        "private_room": "なし",
+        "horigotatsu": "なし ：無",
+        "tatami": "あり ：35名まで入れる座敷席あり",
+        "card": "利用不可",
+        "non_smoking": "全面禁煙",
+        "charter": "貸切可 ：20名様以上で座敷貸切OK！",
+        "parking": "あり ：ファーストパークが提携駐車場となります。お気軽にお問い合わせください",
+        "barrier_free": "なし ：無",
+        "show": "なし",
+        "karaoke": "なし",
+        "band": "不可",
+        "tv": "なし",
+        "english": "なし",
+        "pet": "不可",
+        "child": "お子様連れOK ：お子様は早い時間がオススメです",
+        "coupon_urls": {
+          "pc": "https://www.hotpepper.jp/strJ001128730/map/?vos=nhppalsa000016",
+          "sp": "https://www.hotpepper.jp/strJ001128730/scoupon/?vos=nhppalsa000016"
+        },
+        "course": "あり",
+        "photo": {
+          "pc": {
+            "l": "https://imgfp.hotp.jp/IMGH/17/35/P033651735/P033651735_238.jpg",
+            "m": "https://imgfp.hotp.jp/IMGH/17/35/P033651735/P033651735_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/17/35/P033651735/P033651735_58_s.jpg"
+          },
+          "mobile": {
+            "l": "https://imgfp.hotp.jp/IMGH/17/35/P033651735/P033651735_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/17/35/P033651735/P033651735_100.jpg"
+          }
+        },
+        "lunch": "なし",
+        "midnight": "営業していない"
+      },
+      {
+        "id": "J000728875",
+        "name": "れんが亭 つくば店",
+        "logo_image": "https://imgfp.hotp.jp/IMGH/82/93/P032008293/P032008293_69.jpg",
+        "name_kana": "やきにく・しゃぶしゃぶれんがてい　つくばてん",
+        "address": "茨城県つくば市春日４－１－１",
+        "station_name": "つくば",
+        "ktai_coupon": "0",
+        "large_service_area": {
+          "code": "SS10",
+          "name": "関東"
+        },
+        "service_area": {
+          "code": "SA15",
+          "name": "茨城"
+        },
+        "large_area": {
+          "code": "Z015",
+          "name": "茨城"
+        },
+        "middle_area": {
+          "code": "Y925",
+          "name": "つくば"
+        },
+        "small_area": {
+          "code": "X613",
+          "name": "つくば駅北・筑波大学"
+        },
+        "lat": "36.0961223761",
+        "lng": "140.0959737913",
+        "genre": {
+          "code": "G008",
+          "name": "焼肉・ホルモン",
+          "catch": "厳選黒毛和牛から食べ放題まで♪完全個室有"
+        },
+        "sub_genre": {
+          "code": "G004",
+          "name": "和食"
+        },
+        "budget": {
+          "code": "B008",
+          "name": "4001～5000円",
+          "average": "昼：1320円～　夜：4000～5000円"
+        },
+        "budget_memo": "クレジットのご利用は5000円～/クーポン、食事券との併用不可",
+        "catch": "デザートプレートご用意 焼肉しゃぶしゃぶ食べ放題",
+        "capacity": "50",
+        "access": "土浦方面から西大通りを右折し3分。古内交差点右側。研究学園駅から1984m。",
+        "mobile_access": "研究学園駅から1984m",
+        "urls": {
+          "pc": "https://www.hotpepper.jp/strJ000728875/?vos=nhppalsa000016"
+        },
+        "open": "火～日、祝日、祝前日: 11:30～14:00 （料理L.O. 13:30 ドリンクL.O. 13:30）17:00～23:00 （料理L.O. 22:30 ドリンクL.O. 22:30）",
+        "close": "月",
+        "party_capacity": "21",
+        "wifi": "あり",
+        "other_memo": "富士溶岩石無煙ロースター／鉄板焼カウンター",
+        "shop_detail_memo": "スタッフ募集☆お気軽にお問合せください☆",
+        "wedding": "宴会、パーティーなど随時受け付けております☆お気軽にご相談ください！",
+        "free_drink": "あり ：焼肉しゃぶしゃぶのお席でのご提供、鉄板焼のお席ではご提供致しておりません。",
+        "free_food": "あり ：焼肉orしゃぶしゃぶ食べ放題",
+        "private_room": "あり ：完全個室３部屋【６名様×３部屋(最大18～21名様まで可能)】／※半個室も５部屋あります。",
+        "horigotatsu": "あり ：ゆったり座れます♪デート、ランチなど様々な用途でお付き合い頂けます☆",
+        "tatami": "なし ：お席のご相談はお気軽にお待ちしております☆",
+        "card": "利用可",
+        "non_smoking": "全面禁煙",
+        "charter": "貸切可 ：50名様前後での貸切も承ります☆お気軽にご相談ください☆",
+        "parking": "あり ：専用駐車場も完備☆お酒を飲まれる方の運転はご遠慮ください。",
+        "barrier_free": "なし ：お席のレイアウトもご相談ください☆",
+        "show": "なし",
+        "karaoke": "なし",
+        "band": "不可",
+        "tv": "なし",
+        "english": "なし",
+        "pet": "不可",
+        "child": "お子様連れ歓迎 ：ご家族でのご利用もお待ちしております！",
+        "coupon_urls": {
+          "pc": "https://www.hotpepper.jp/strJ000728875/map/?vos=nhppalsa000016",
+          "sp": "https://www.hotpepper.jp/strJ000728875/scoupon/?vos=nhppalsa000016"
+        },
+        "course": "あり",
+        "photo": {
+          "pc": {
+            "l": "https://imgfp.hotp.jp/IMGH/45/87/P025594587/P025594587_238.jpg",
+            "m": "https://imgfp.hotp.jp/IMGH/45/87/P025594587/P025594587_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/45/87/P025594587/P025594587_58_s.jpg"
+          },
+          "mobile": {
+            "l": "https://imgfp.hotp.jp/IMGH/45/87/P025594587/P025594587_168.jpg",
+            "s": "https://imgfp.hotp.jp/IMGH/45/87/P025594587/P025594587_100.jpg"
+          }
+        },
+        "lunch": "あり",
+        "midnight": "営業していない"
+      }
+    ]
+  }
+}
