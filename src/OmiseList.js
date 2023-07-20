@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Data from "./tsukuba_omise.json";
 
 const omiseList1 = [
     "百香亭",
@@ -10,7 +11,8 @@ function OmiseList(){
     return(
         <div>
             <button onClick={() => setShow(true)}>今日のご飯は？</button>
-            {show && <h2>今日のご飯は{omiseList1[Math.floor(Math.random() * omiseList1.length)]}</h2>}
+            {show && <h2>今日のご飯は<br/>{Data["results"]["shop"][Math.floor(Math.random() * Data["results"]["shop"].length)]["name"]}</h2>}
+            {/* {show && <h2>今日のご飯は{omiseList1[Math.floor(Math.random() * omiseList1.length)]}</h2>} */}
         </div>
     );
 }
