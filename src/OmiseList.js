@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Data from "./tsukuba_omise.json";
+import Data from "./lunch.json";
 
 const omiseList1 = [
     "百香亭",

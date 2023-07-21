@@ -1,0 +1,123 @@
+{
+    "results": {
+      "@xmlns": "http://webservice.recruit.co.jp/HotPepper/",
+      "api_version": "1.26",
+      "results_available": "165",
+      "results_returned": "10",
+      "results_start": "1",
+      "shop": [
+        {
+            "name": "フライパン",
+            "address": "茨城県つくば市春日4-3-22",
+            "budget": {
+              "average": 1500
+            },
+            "genre": {
+              "name": "洋食"
+            },
+            "close": "",
+            "urls": {
+              "pc": "https://www.hotpepper.jp/strJ000311501/"
+            }
+          },
+          {
+            "name": "天下一品　つくば店",
+            "address": "茨城県つくば市花室９８２",
+            "budget": {
+              "average": 1000
+            },
+            "genre": {
+              "name": "ラーメン"
+            },
+            "close": "",
+            "urls": {
+              "pc": "https://www.hotpepper.jp/strJ000626194/"
+            }
+          },
+          {
+            "name": "ZEYO.",
+            "address": "茨城県つくば市天久保２丁目６−１ ベスト ランド Ⅳ 1F",
+            "budget": {
+              "average": 1000
+            },
+            "genre": {
+              "name": "カレーうどん"
+            },
+            "close": "年中無休",
+            "urls": {
+              "pc": "https://tabelog.com/ibaraki/A0802/A080201/8010545/"
+            }
+          },
+          {
+            "name": "夢屋",
+            "address": "茨城県つくば市春日４丁目４−５",
+            "budget": {
+              "average": 1000
+            },
+            "genre": {
+              "name": "和食"
+            },
+            "close": "水,日曜・祝日の昼",
+            "urls": {
+              "pc": "https://www.hotpepper.jp/strJ000311677/"
+            }
+          },
+          {
+            "name": "芛堂寺",
+            "address": "茨城県つくば市天久保２丁目６−１",
+            "budget": {
+              "average": 1000
+            },
+            "genre": {
+              "name": "ラーメン"
+            },
+            "close": "",
+            "urls": {
+              "pc": "https://www.google.co.jp/maps/place/%E8%8A%9B%E5%A0%82%E5%AF%BA/@36.0989846,140.1031051,17.16z/data=!4m6!3m5!1s0x60220d014a2144b5:0x1994cb3e6c2fab08!8m2!3d36.0980122!4d140.1061074!16s%2Fg%2F11h93lxdm2?hl=ja&entry=ttu"
+            }
+          },
+          {
+            "name": "筑波大学第2エリア大食堂",
+            "address": "〒305-0006 茨城県つくば市天王台１丁目１",
+            "budget": {
+              "average": 500
+            },
+            "genre": {
+              "name": "学食"
+            },
+            "close": "日曜日",
+            "urls": {
+              "pc": "https://www.google.co.jp/maps/place/%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E7%AC%AC2%E3%82%A8%E3%83%AA%E3%82%A2%E5%A4%A7%E9%A3%9F%E5%A0%82/@36.1108915,140.0987011,17z/data=!3m1!4b1!4m6!3m5!1s0x60220c01198068f3:0xe0937f4e0d78477!8m2!3d36.1108872!4d140.1012814!16s%2Fg%2F12qh7vh7h?hl=ja&entry=ttu"
+            }
+          },
+          {
+            "name": "粉とクリーム",
+            "address": "筑波大学3A棟",
+            "budget": {
+              "average": 1000
+            },
+            "genre": {
+              "name": "洋食・パスタ"
+            },
+            "close": "パン販売　9:00~17:00（月~金,パスタ 11:00~14:00（月~金）",
+            "urls": {
+              "pc": "https://kosei.sec.tsukuba.ac.jp/store/store_36"
+            }
+          },
+          {
+            "name": "大学会館レストラン　筑波デミ",
+            "address": "大学会館本店1F",
+            "budget": {
+              "average": 800
+            },
+            "genre": {
+              "name": "洋食"
+            },
+            "close": "11:00~13:00(月~金) 17:00 ～20:30(月～金・予約制） ",
+            "urls": {
+              "pc": "https://kosei.sec.tsukuba.ac.jp/store/store_51"
+            }
+          }
+    ]
+  }
+}
