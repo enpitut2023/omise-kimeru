@@ -117,6 +117,118 @@
             "urls": {
               "pc": "https://kosei.sec.tsukuba.ac.jp/store/store_51"
             }
+          },
+          {
+            "name": "百香亭 筑波大学店",
+            "address": "茨城県つくば市天久保３丁目１５−１",
+            "budget": {
+              "average": 1000
+            },
+            "genre": {
+              "name": "中華"
+            },
+            "close": "",
+            "urls": {
+              "pc": "https://www.google.co.jp/maps/place/%E7%99%BE%E9%A6%99%E4%BA%AD+%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E5%BA%97/@36.1073195,140.1027212,17.93z/data=!4m6!3m5!1s0x60220c066c23db91:0x837cda30f3673a96!8m2!3d36.1072017!4d140.1052494!16s%2Fg%2F1vzg2bnj?hl=ja&entry=ttu"
+            }
+          },
+          {
+            "name": "ハリケンらーめん",
+            "address": "茨城県つくば市栗原2857-8",
+            "budget": {
+              "average":1000
+            },
+            "genre": {
+              "name": "ラーメン"
+            },
+            "close": "年中無休",
+            "urls": {
+              "pc": "https://www.hotpepper.jp/strJ001000449/"
+            }
+          },
+          {
+            "name": "cafe Rob つくば店",
+            "address": "茨城県つくば市天久保３－１５－４",
+            "budget": {
+              "average": 1250
+            },
+            "genre": {
+              "name": "カフェ・スイーツ・ダイニングバー"
+            },
+            "close": "月～日、祝日、祝前日: 11:00～16:30 （料理L.O. 16:00 ドリンクL.O. 16:00）",
+            "urls": {
+              "pc": "https://www.hotpepper.jp/strJ001128731/"
+            }
+          },
+          {
+            "name": "れんが亭",
+            "address": "茨城県つくば市春日４－１－１",
+            "budget": {
+              "average": 1500
+            },
+            "genre": {
+              "name": "焼肉"
+            },
+            "close": "月曜",
+            "urls": {
+              "pc": "https://www.hotpepper.jp/strJ000728875/"
+            }
+          },
+          {
+            "name": "くい亭",
+            "address": "茨城県つくば市上野７０１−２",
+            "budget": {
+              "average": 1000
+            },
+            "genre": {
+              "name": "和食"
+            },
+            "close": "土日祝日",
+            "urls": {
+              "pc": "https://tabelog.com/ibaraki/A0802/A080201/8020104/"
+            }
+          },
+          {
+            "name": "とんとこ豚",
+            "address": "茨城県つくば市天久保２丁目１８−４",
+            "budget": {
+              "average": 1500
+            },
+            "genre": {
+              "name": "とんかつ"
+            },
+            "close": "火曜日",
+            "urls": {
+              "pc": "https://www.google.co.jp/maps/place/%E3%81%A8%E3%82%93%E3%81%A8%E3%81%93%E8%B1%9A/@36.0954388,140.1093044,17z/data=!3m1!4b1!4m6!3m5!1s0x60220c6de54ace2d:0x4c601fb8273cb72!8m2!3d36.0954345!4d140.1118847!16s%2Fg%2F12hq998p7?hl=ja&entry=ttu"
+            }
+          },
+          {
+            "name": "バーガーズカフェwikiwiki",
+            "address": "茨城県つくば市天久保１－10－4　ジョイプラザ天久保2号室",
+            "budget": {
+              "average": 1500
+            },
+            "genre": {
+              "name": "ハンバーガー"
+            },
+            "close": "土日祝日",
+            "urls": {
+              "pc": "https://www.hotpepper.jp/strJ001275215/"
+            }
+          },
+          {
+            "name": "誠寿司",
+            "address": "〒茨城県つくば市春日４丁目１２−３",
+            "budget": {
+              "average": 1000
+            },
+            "genre": {
+              "name": "寿司"
+            },
+            "close": "火曜日",
+            "urls": {
+              "pc": "https://www.hotpepper.jp/strJ000311552/"
+            }
           }
     ]
   }
