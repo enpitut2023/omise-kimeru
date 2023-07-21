@@ -11,7 +11,7 @@ function OmiseList(){
             <button onClick={() => setShow(true)}>今日のご飯は？</button>
             {show &&
             <div>
-            <h2>今日のご飯は「{shopInfo["name"]}」です。</h2>
+            <a href={shopInfo["urls"]["pc"]}> <h2>今日のご飯は「{shopInfo["name"]}」です。</h2></a>
             <p>予算:{shopInfo["budget"]["average"]}円</p>
             <p>ジャンル:{shopInfo["genre"]["name"]}</p>            
             </div>
