@@ -215,6 +215,20 @@
             "urls": {
               "pc": "https://www.hotpepper.jp/strJ001275215/"
             }
+          },
+          {
+            "name": "誠寿司",
+            "address": "〒茨城県つくば市春日４丁目１２−３",
+            "budget": {
+              "average": 1000
+            },
+            "genre": {
+              "name": "寿司"
+            },
+            "close": "火曜日",
+            "urls": {
+              "pc": "https://www.hotpepper.jp/strJ000311552/"
+            }
           }
     ]
   }
