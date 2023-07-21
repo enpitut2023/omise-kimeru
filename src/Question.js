@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
 //UI実装
-function Question(){
-    const genres = ["洋食","和食","中華","イタリアン・フレンチ","焼き肉・ホルモン","お好み焼き・もんじゃ","居酒屋","ラーメン"]
-    const budgetOptions =["500","1000","2000","3000","4000","5000"]
-
-    const [response, setResponse] = useState({checkedgenres: [], budget: 500})
+function Question(props){
+    const genres = props.genres
+    const budgetOptions = props.budgetOptions
+    const response= props.respose 
+    const setResponse=props.setRespose 
 
     const handleCheckboxChange= (genre) =>{
         setResponse(prevResponse => {
