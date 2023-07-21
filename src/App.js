@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
 import OmiseList from './OmiseList';
+import Question from './Question';
 
 // index.jsから呼ばれる
 function App() {
@@ -12,6 +13,7 @@ function App() {
           おみせきめーる
         </h1>
         <OmiseList/> {/* <OmiseList></OmiseList>に同じ */}
+        <Question />
       </header>
     </div>
   );
