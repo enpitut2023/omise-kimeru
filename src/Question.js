@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 function Question(props){
     const genres = props.genres
     const budgetOptions = props.budgetOptions
-    const response= props.respose 
+    const response= props.response 
     const setResponse=props.setRespose 
 
     const handleCheckboxChange= (genre) =>{
