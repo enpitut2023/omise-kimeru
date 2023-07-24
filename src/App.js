@@ -26,6 +26,29 @@ function App() {
 
   let filteredShops
 
+  const handleCheckboxChange= (genre) =>{ //checkboxの入力に基づいて配列にアイテムを加えてる
+      setResponse(prevResponse => {
+          if (prevResponse.checkedgenres.includes(genre)){
+              return{
+                  ...prevResponse,
+                  checkedgenres:prevResponse.checkedgenres.filter(g => g !=genre) 
+              } 
+          }else{
+              return{
+                  ...prevResponse,
+                  checkedgenres:[...prevResponse.checkedgenres, genre]
+              } 
+          }
+      })
+  } 
+
+  const handleBudgetChange=(event) =>{
+      setResponse(prevResponse => ({
+          ...prevResponse,
+          budget:parseInt(event.target.value)
+      }))
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -36,8 +59,13 @@ function App() {
           genres={ genres } 
           budgetOptions={ budgetOptions } 
           response={ response }
-          setResponse={ setResponse }  
+          setResponse={ setResponse }
+          handleCheckboxChange={ handleCheckboxChange }
+          handleBudgetChange={ handleBudgetChange }
         />
+        <pre>
+          { JSON.stringify(response, null, 2) }
+        </pre>
         
         <button onClick={() => {
           filteredShops = FilterShops(shops, filterAttr);

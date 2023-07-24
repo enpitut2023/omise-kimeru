@@ -7,29 +7,6 @@ function Question(props){
     const response= props.response 
     const setResponse=props.setRespose 
 
-    const handleCheckboxChange= (genre) =>{
-        setResponse(prevResponse => {
-            if (prevResponse.checkedgenres.includes(genre)){
-                return{
-                    ...prevResponse,
-                    checkedgenres:prevResponse.checkedgenres.filter(g => g !=genre) 
-                } 
-            }else{
-                return{
-                    ...prevResponse,
-                    checkedgenres:[...prevResponse.checkedgenres, genre]
-                } 
-            }
-        })
-    } 
-
-    const handleBudgetChange=(event) =>{
-        setResponse(prevResponse => ({
-            ...prevResponse,
-            budget:parseInt(event.target.value)
-        }))
-    }
-
     return(
         <div>
         <p>食べたくないジャンル</p>
@@ -40,7 +17,7 @@ function Question(props){
                             type='checkbox'
                             value={genre}
                             checked={response.checkedgenres.includes(genre)}
-                            onChange={() => handleCheckboxChange(genre)}
+                            onChange={() => props.handleCheckboxChange(genre)}
                         />
                         {genre}
                     </label>
@@ -52,7 +29,7 @@ function Question(props){
             予算
             <select 
             value={response.budget}
-            onChange={handleBudgetChange}
+            onChange={props.handleBudgetChange}
             >
               {budgetOptions.map((budgetOption) => (
                 <option 
@@ -64,6 +41,7 @@ function Question(props){
 
               }  
             </select>
+            円
         </div>
         </div>
     );
