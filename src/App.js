@@ -14,38 +14,40 @@ function App() {
   const genres = ["洋食","和食","中華","イタリアン・フレンチ","焼き肉・ホルモン","お好み焼き・もんじゃ","居酒屋","ラーメン"]
   const budgetOptions =["500","1000","2000","3000","4000","5000"]
 
-  const [response, setResponse] = useState({checkedgenres: [], budget: 500})
+  const [filterAttr, setFilterAttr] = useState({"checkedgenres": [], "budget": 500})
+
   const [show, setShow] = useState(false);
 
   const shops = Data["results"]["shop"];
 
-  const filterAttr = {
-      "maxBuget": 1500,
-      "excludeGenre": ["ラーメン", "洋食"]
-  };
+  const [filteredShops, setFilteredShops] = useState([])
 
-  let filteredShops
+  // const filterAttr = {
+  //     "budget": 1500,
+  //     "checkedgenres": ["ラーメン", "洋食"]
+  // };
+
 
   const handleCheckboxChange= (genre) =>{ //checkboxの入力に基づいて配列にアイテムを加えてる
-      setResponse(prevResponse => {
-          if (prevResponse.checkedgenres.includes(genre)){
+         setFilterAttr(prevfilterAttr => {
+          if (prevfilterAttr.checkedgenres.includes(genre)){
               return{
-                  ...prevResponse,
-                  checkedgenres:prevResponse.checkedgenres.filter(g => g !=genre) 
-              } 
+                  ...prevfilterAttr,
+                  "checkedgenres" :prevfilterAttr.checkedgenres.filter(g => g !=genre)
+              }
           }else{
               return{
-                  ...prevResponse,
-                  checkedgenres:[...prevResponse.checkedgenres, genre]
-              } 
+                  ...prevfilterAttr,
+                  "checkedgenres" :[...prevfilterAttr.checkedgenres, genre]
+              }
           }
       })
-  } 
+  }
 
   const handleBudgetChange=(event) =>{
-      setResponse(prevResponse => ({
-          ...prevResponse,
-          budget:parseInt(event.target.value)
+         setFilterAttr(prevfilterAttr => ({
+          ...prevfilterAttr,
+          "budget" :parseInt(event.target.value)
       }))
   }
 
@@ -56,19 +58,18 @@ function App() {
           おみせきめーる
         </h1>
         <Question
-          genres={ genres } 
-          budgetOptions={ budgetOptions } 
-          response={ response }
-          setResponse={ setResponse }
+          genres={ genres }
+          budgetOptions={ budgetOptions }
+          filterAttr={ filterAttr }
+             setFilterAttr={    setFilterAttr }
           handleCheckboxChange={ handleCheckboxChange }
           handleBudgetChange={ handleBudgetChange }
         />
-        <pre>
-          { JSON.stringify(response, null, 2) }
-        </pre>
-        
+
+
         <button onClick={() => {
-          filteredShops = FilterShops(shops, filterAttr);
+          setFilteredShops(FilterShops(shops, filterAttr));
+          console.log("onClick:",filteredShops)
           setShow(true)
         }}>
           今日のご飯は？

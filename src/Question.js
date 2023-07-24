@@ -4,8 +4,8 @@ import React, { useEffect, useState } from 'react';
 function Question(props){
     const genres = props.genres
     const budgetOptions = props.budgetOptions
-    const response= props.response 
-    const setResponse=props.setRespose 
+    const filterAttr= props.filterAttr
+    const setfilterAttr=props.setRespose
 
     return(
         <div>
@@ -16,30 +16,30 @@ function Question(props){
                         <input
                             type='checkbox'
                             value={genre}
-                            checked={response.checkedgenres.includes(genre)}
+                            checked={filterAttr.checkedgenres.includes(genre)}
                             onChange={() => props.handleCheckboxChange(genre)}
                         />
                         {genre}
                     </label>
-                    
+
                 </div>
         ))
         }
         <div>
             予算
-            <select 
-            value={response.budget}
+            <select
+            value={filterAttr.budget}
             onChange={props.handleBudgetChange}
             >
               {budgetOptions.map((budgetOption) => (
-                <option 
-                key={budgetOption} 
+                <option
+                key={budgetOption}
                 value={budgetOption}>
                 {budgetOption}
-                </option> 
+                </option>
               ))
 
-              }  
+              }
             </select>
             円
         </div>

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 // showShopは一つのお店を表示する関数(になっていく)
 function ShowShop(shopInfo){
-    
+
     return(
         <div>
             <div>
@@ -18,7 +18,7 @@ function ShowShop(shopInfo){
 function SuggestShops(props){
     const filteredShops = props.filteredShops;
     const shopInfo = filteredShops[Math.floor(Math.random() * filteredShops.length)];
-
+    console.log("filteredShops:",filteredShops)
     return ShowShop(shopInfo);
 }
 
