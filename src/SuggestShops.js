@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 
+const StyledLink = styled.a`
+    color: #FFA500;
+    &:hover {
+        color: #FF4500;
+        text-decoration: underline;
+    }
+`;
 
 // showShopは一つのお店を表示する関数(になっていく)
 function ShowShop(props){
@@ -7,7 +15,7 @@ function ShowShop(props){
     return(
         <div>
             <div>
-            <a href={shopInfo["urls"]["pc"]}> <h2>今日のご飯は「{shopInfo["name"]}」です。</h2></a>
+            <StyledLink href={shopInfo["urls"]["pc"]} rel="noopener noreferrer" target="_blank"> <h2>今日のご飯は「{shopInfo["name"]}」です。</h2></StyledLink>
             <p>予算:{shopInfo["budget"]["average"]}円</p>
             <p>ジャンル:{shopInfo["genre"]["name"]}</p>
             </div>
