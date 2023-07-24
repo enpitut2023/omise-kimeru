@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./App.css"
 //UI実装
-function Question(props){
+function Questionnaire(props){
     const genres = props.genres
     const budgetOptions = props.budgetOptions
     const filterAttr= props.filterAttr
@@ -47,4 +47,4 @@ function Question(props){
     );
 }
 
-export default Question;
+export default Questionnaire;
