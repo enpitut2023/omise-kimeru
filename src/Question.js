@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import "./App.css"
 //UI実装
 function Question(props){
     const genres = props.genres
@@ -8,7 +8,7 @@ function Question(props){
     const setfilterAttr=props.setRespose
 
     return(
-        <div>
+        <div class="question">
         <p>食べたくないジャンル</p>
         {genres.map((genre, index) => (
                 <div key={index}>
@@ -25,8 +25,8 @@ function Question(props){
                 </div>
         ))
         }
-        <div>
-            予算
+        <div class="budget-select">
+            予算:
             <select
             value={filterAttr.budget}
             onChange={props.handleBudgetChange}
