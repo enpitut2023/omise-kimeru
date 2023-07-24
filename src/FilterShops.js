@@ -2,7 +2,6 @@ import React from 'react';
 
 function FilterShops(shops, filterAttr){
   const filteredShops = shops.filter((shop) =>{
-    console.log(filterAttr["checkedgenres"])
       return(
           // TODO: shop["budget"]["average"]がnullの場合の処理はtrueにする処理をかく
           // 予算内かどうか

@@ -22,12 +22,6 @@ function App() {
 
   const [filteredShops, setFilteredShops] = useState([])
 
-  // const filterAttr = {
-  //     "budget": 1500,
-  //     "checkedgenres": ["ラーメン", "洋食"]
-  // };
-
-
   const handleCheckboxChange= (genre) =>{ //checkboxの入力に基づいて配列にアイテムを加えてる
          setFilterAttr(prevfilterAttr => {
           if (prevfilterAttr.checkedgenres.includes(genre)){
@@ -69,13 +63,12 @@ function App() {
 
         <button onClick={() => {
           setFilteredShops(FilterShops(shops, filterAttr));
-          console.log("onClick:",filteredShops)
           setShow(true)
         }}>
           今日のご飯は？
         </button>
         {
-          show && <SuggestShops filteredShops={ filteredShops }/>
+          show && <SuggestShops filteredShops={ filteredShops } shops = { shops }/>
         }
       </header>
     </div>
