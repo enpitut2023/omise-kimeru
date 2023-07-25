@@ -10,14 +10,24 @@ function Questionnaire(props){
 
 
   return (
-    <div className="App">
-
+    <div
+    className="App"
+    style={{
+        textAlign : 'center',
+        backgroundColor : 'rgb(245,235,235)',
+        padding : '5%'
+    }}>
+      
         <Question
           filterAttr={ filterAttr }
           setFilterAttr={ setFilterAttr }
         />
 
-        <button onClick={async () => {
+        <button
+        style={{
+          padding : '5%'
+        }}
+        onClick={async () => {
           const filteredShops = await getShops();
           setFilteredShops(filteredShops);
           setFinish(true)

@@ -30,10 +30,19 @@ function Question(props){
  }
 
     return(
-        <div class="question">
-        <p>食べたくないジャンル</p>
+
+        <div className="question">
+        <p style={{fontSize : '150%'}}>食べたくないジャンル</p>
+        <div
+            style={{
+                width: '200px',
+                margin:'auto',
+                textAlign: 'left'
+            }}
+        >
         {Object.keys(GENRE_CODES).map((code, idx) => (
                 <div key={code}>
+
                     <label>
                         <input
                             type='checkbox'
@@ -46,8 +55,9 @@ function Question(props){
                 </div>
         ))
         }
-        <div class="budget-select">
-            予算:
+        </div>
+        <div className="budget-select">
+            <p style={{fontSize : '150%'}}>予算</p>
             <select
             value={filterAttr["budgetCodeIdx"]}
             onChange={handleBudgetChange}
