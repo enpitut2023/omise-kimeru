@@ -37,18 +37,7 @@ function Questionnaire(props){
   const isGetGeolocation = props.isGetGeolocation
 
   return (
-    <div
-    className="App"
-    style={{
-        textAlign : 'center',
-        backgroundColor : 'rgb(245,235,235)',
-        padding : '5%'
-    }}>
-        {
-          // <CannotGetGeolocationModal
-          //   isGetGeolocation={isGetGeolocation}
-          // />
-        }
+    <div className="App">
         <Question
           filterAttr={ filterAttr }
           setFilterAttr={ setFilterAttr }
