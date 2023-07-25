@@ -8,8 +8,8 @@ function Question(props){
 
     const handleBudgetChange=(event) =>{
         setFilterAttr(prevfilterAttr => ({
-         ...prevfilterAttr,
-         "budgetCodeIdx" :parseInt(event.target.value)
+        ...prevfilterAttr,
+        "budgetCodeIdx": parseInt(event.target.value)
      }))
     }
 
@@ -49,7 +49,7 @@ function Question(props){
         <div class="budget-select">
             予算:
             <select
-            value={filterAttr.budget}
+            value={filterAttr["budgetCodeIdx"]}
             onChange={handleBudgetChange}
             >
               {BUDGET_CODES.map((budget_code, idx) => (
