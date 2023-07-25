@@ -15,8 +15,6 @@ function ShowShop(props){
     const setFinish = props.setFinish;
     const filteredShops = props.filteredShops;
     const setFilteredShops = props.setFilteredShops;
-    
-
 
     return(
         <div>
@@ -28,7 +26,7 @@ function ShowShop(props){
                 <p>{ shopInfo["genre"]["catch"] }</p>
             }
             { shopInfo["photo"]["pc"]["l"] &&
-                <img 
+                <img
                     src={ shopInfo["photo"]["pc"]["l"] }
                     style={{
                         width:"90%",
@@ -47,7 +45,7 @@ function ShowShop(props){
 
             <p>ジャンル: { shopInfo["genre"]["name"] }</p>
             <button onClick={() => { setFinish(false)}}>アンケートに戻る</button>
-            <button onClick={() => { 
+            <button onClick={() => {
                setFilteredShops(filteredShops.filter(shop => shop !== shopInfo))
             }}>もう一度お店を決め直す</button>
         </div>
@@ -68,9 +66,9 @@ function SuggestShops(props){
         );
     }
     const shopInfo = filteredShops[Math.floor(Math.random() * filteredShops.length)];
-    return  <ShowShop 
+    return  <ShowShop
     shopInfo={shopInfo}
-    setFinish={setFinish} 
+    setFinish={setFinish}
     filteredShops={filteredShops}
     setFilteredShops={setFilteredShops}/>;
 }
