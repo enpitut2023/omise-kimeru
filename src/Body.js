@@ -62,7 +62,10 @@ function Body(){
         getShops={getShops}
         />
     }else{
-        return <SuggestShops filteredShops={ filteredShops }/>
+        return <SuggestShops 
+        filteredShops={ filteredShops } 
+        setFilteredShops={ setFilteredShops } 
+        setFinish={setFinish} />
     }
 
 }
