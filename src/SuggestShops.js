@@ -49,8 +49,7 @@ function ShowShop(props){
             <button onClick={() => { setFinish(false)}}>アンケートに戻る</button>
             <button onClick={() => { 
                setFilteredShops(filteredShops.filter(shop => shop !== shopInfo))
-            }}>もう一度お店を決め直す</button> 
-            </div>
+            }}>もう一度お店を決め直す</button>
         </div>
     );
 }
