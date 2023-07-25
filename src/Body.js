@@ -51,8 +51,9 @@ function Body(){
   }
 
     const getShops = async () => {
-        const includeGenreCodes = Object.keys(GENRE_CODES).filter((genre) => {
-          return !(filterAttr["excludeGenreCode"].includes(genre["code"]))
+        const genreCodes = Object.keys(GENRE_CODES);
+        const includeGenreCodes = genreCodes.filter((genre_code) => {
+            return !(filterAttr["excludeGenreCode"].includes(genre_code))
         });
 
          if (includeGenreCodes.length === 0) {
