@@ -2,6 +2,8 @@ import React from 'react';
 import "./App.css"
 import { BUDGET_CODES, GENRE_CODES } from './HotpepperConf';
 
+
+
 function Question(props){
     const filterAttr= props.filterAttr
     const setFilterAttr= props.setFilterAttr
@@ -30,50 +32,49 @@ function Question(props){
  }
 
     return(
-
         <div className="question">
-        <p style={{fontSize : '150%'}}>食べたくないジャンル</p>
-        <div
-            style={{
-                width: '200px',
-                margin:'auto',
-                textAlign: 'left'
-            }}
-        >
-        {Object.keys(GENRE_CODES).map((code, idx) => (
-                <div key={code}>
-
-                    <label>
-                        <input
-                            type='checkbox'
-                            value={code}
-                            checked={filterAttr.excludeGenreCode.includes(code)}
-                            onChange={() => handleCheckboxChange(code)}
-                        />
-                        {GENRE_CODES[code]}
-                    </label>
-                </div>
-        ))
-        }
-        </div>
-        <div className="budget-select">
-            <p style={{fontSize : '150%'}}>予算</p>
-            <select
-            value={filterAttr["budgetCodeIdx"]}
-            onChange={handleBudgetChange}
+            <p style={{fontSize : '150%'}}>食べたくないジャンル</p>
+            <div
+                style={{
+                    width: '200px',
+                    margin:'auto',
+                    textAlign: 'left'
+                }}
             >
-              {BUDGET_CODES.map((budget_code, idx) => (
-                <option
-                key={budget_code.code}
-                value={idx}>
-                {budget_code.min} ~ {budget_code.max}
-                </option>
-              ))
+            {Object.keys(GENRE_CODES).map((code) => (
+                    <div key={code}>
 
-              }
-            </select>
-              円
-        </div>
+                        <label>
+                            <input
+                                type='checkbox'
+                                value={code}
+                                checked={filterAttr.excludeGenreCode.includes(code)}
+                                onChange={() => handleCheckboxChange(code)}
+                            />
+                            {GENRE_CODES[code]}
+                        </label>
+                    </div>
+            ))
+            }
+            </div>
+            <div class="budget-select">
+                <p style={{fontSize : '150%'}}>予算</p>
+                <select
+                value={filterAttr["budgetCodeIdx"]}
+                onChange={handleBudgetChange}
+                >
+                {BUDGET_CODES.map((budget_code, idx) => (
+                    <option
+                    key={budget_code.code}
+                    value={idx}>
+                    {budget_code.min} ~ {budget_code.max}
+                    </option>
+                ))
+
+                }
+                </select>
+                円
+            </div>
         </div>
     );
 }

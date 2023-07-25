@@ -1,6 +1,7 @@
 import React from 'react';
 import Question from './Question';
 
+
 function Questionnaire(props){
   const filterAttr = props.filterAttr
   const setFilterAttr = props.setFilterAttr
@@ -8,16 +9,8 @@ function Questionnaire(props){
   const setFinish = props.setFinish
   const getShops = props.getShops
 
-
   return (
-    <div
-    className="App"
-    style={{
-        textAlign : 'center',
-        backgroundColor : 'rgb(245,235,235)',
-        padding : '5%'
-    }}>
-      
+    <div className="App">
         <Question
           filterAttr={ filterAttr }
           setFilterAttr={ setFilterAttr }

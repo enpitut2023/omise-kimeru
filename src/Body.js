@@ -1,14 +1,54 @@
-import React , { useState } from 'react';
+import React , { useEffect, useState } from 'react';
 import SuggestShops from './SuggestShops';
 import Questionnaire from './Questionnaire';
 import axios from 'axios';
 import { BUDGET_CODES, GENRE_CODES } from './HotpepperConf';
+import GeolocationModal from './GeolocationModal';
+
+const TSUKUBA_GEOLACATION = {
+    lat: 36.0834,
+    lng: 140.0766
+}
 
 function Body(){
     const [finish, setFinish] = useState(false);
-    const [filterAttr, setFilterAttr] = useState({"excludeGenreCode": [], "budgetCodeIdx": 3})
+    const [filterAttr, setFilterAttr] = useState({
+        "excludeGenreCode": [],
+        "budgetCodeIdx": 3
+    })
+    const [geoLocation, setGeoLocation] = useState(TSUKUBA_GEOLACATION)
+
     const [filteredShops, setFilteredShops] = useState([])
 
+    const [isGetGeolocation, setIsGetGeolocation] = useState(true)
+    const [showGeoModal, setShowGeoModal] = useState(false)
+    useEffect(() => {
+      getGeolocation()
+    }, [])
+
+
+    useEffect(() => {
+        setShowGeoModal(!isGetGeolocation)
+    }, [isGetGeolocation])
+
+
+  const getGeolocation = async () => {
+      if(navigator.geolocation){ //対応している場合のみ緯度経度取得
+          await navigator.geolocation.getCurrentPosition((position) =>{
+            setGeoLocation({
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            })
+          },
+            (error) => {
+                console.log(error)
+                setIsGetGeolocation(false)
+            }
+          )
+      }else{
+        setIsGetGeolocation(false)
+      }
+  }
 
     const getShops = async () => {
         const includeGenreCodes = Object.keys(GENRE_CODES).filter((genre) => {
@@ -33,12 +73,14 @@ function Body(){
               'Content-Type': 'application/json',
             },
             params: {
-              //"large_area": "SA15"
-              large_area: "Z011",
-              budget: BUDGET_CODES[filterAttr["budgetCodeIdx"]]["code"],
-              genre: includeGenreCodes.join(",")
+                lat: geoLocation["lat"],
+                lng: geoLocation["lng"],
+                count: 100,
+                budget: BUDGET_CODES[filterAttr["budgetCodeIdx"]]["code"],
+                genre: includeGenreCodes.join(",")
             }
           };
+
           return await axios.get(url, config);
         })).then((responses) => {
           let resShops = [];
@@ -52,18 +94,36 @@ function Body(){
         return resShops;
       }
 
+    return(
+        <>
+            <GeolocationModal
+                show={showGeoModal}
+                handleClose={() => setShowGeoModal(false)}
+            />
+            <div
+                style={{
+                    textAlign : 'center',
+                    backgroundColor : 'rgb(245,235,235)',
+                    padding : '5%'
+                }}
+            >{!finish ? (
+                <Questionnaire
+                setFinish={setFinish}
+                filterAttr={filterAttr}
+                setFilterAttr={setFilterAttr}
+                setFilteredShops={setFilteredShops}
+                getShops={getShops}
+                />
+            ) : (
+                <SuggestShops
+            filteredShops={ filteredShops }
+            setFilteredShops={ setFilteredShops }
+            setFinish={setFinish} />
+            )
+            }</div>
+        </>
 
-    if (!finish){
-        return <Questionnaire
-        setFinish={setFinish}
-        filterAttr={filterAttr}
-        setFilterAttr={setFilterAttr}
-        setFilteredShops={setFilteredShops}
-        getShops={getShops}
-        />
-    }else{
-        return <SuggestShops filteredShops={ filteredShops }/>
-    }
+    );
 
 }
 
