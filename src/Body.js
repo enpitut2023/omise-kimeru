@@ -3,6 +3,7 @@ import SuggestShops from './SuggestShops';
 import Questionnaire from './Questionnaire';
 import axios from 'axios';
 import { BUDGET_CODES, GENRE_CODES } from './HotpepperConf';
+import GeolocationModal from './GeolocationModal';
 
 const TSUKUBA_GEOLACATION = {
     lat: 36.0834,
@@ -20,10 +21,16 @@ function Body(){
     const [filteredShops, setFilteredShops] = useState([])
 
     const [isGetGeolocation, setIsGetGeolocation] = useState(true)
-
+    const [showGeoModal, setShowGeoModal] = useState(false)
     useEffect(() => {
       getGeolocation()
     }, [])
+
+
+    useEffect(() => {
+        setShowGeoModal(!isGetGeolocation)
+    }, [isGetGeolocation])
+
 
   const getGeolocation = async () => {
       if(navigator.geolocation){ //対応している場合のみ緯度経度取得
@@ -88,27 +95,34 @@ function Body(){
       }
 
     return(
-        <div
-            style={{
-                textAlign : 'center',
-                backgroundColor : 'rgb(245,235,235)',
-                padding : '5%'
-            }}
-        >{!finish ? (
-            <Questionnaire
-            setFinish={setFinish}
-            filterAttr={filterAttr}
-            setFilterAttr={setFilterAttr}
-            setFilteredShops={setFilteredShops}
-            getShops={getShops}
+        <>
+            <GeolocationModal
+                show={showGeoModal}
+                handleClose={() => setShowGeoModal(false)}
             />
-        ) : (
-            <SuggestShops
-        filteredShops={ filteredShops }
-        setFilteredShops={ setFilteredShops }
-        setFinish={setFinish} />
-        )
-        }</div>
+            <div
+                style={{
+                    textAlign : 'center',
+                    backgroundColor : 'rgb(245,235,235)',
+                    padding : '5%'
+                }}
+            >{!finish ? (
+                <Questionnaire
+                setFinish={setFinish}
+                filterAttr={filterAttr}
+                setFilterAttr={setFilterAttr}
+                setFilteredShops={setFilteredShops}
+                getShops={getShops}
+                />
+            ) : (
+                <SuggestShops
+            filteredShops={ filteredShops }
+            setFilteredShops={ setFilteredShops }
+            setFinish={setFinish} />
+            )
+            }</div>
+        </>
+
     );
 
 }
