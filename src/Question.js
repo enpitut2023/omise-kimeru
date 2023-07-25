@@ -1,27 +1,48 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import "./App.css"
-//UI実装
+import { BUDGET_CODES, GENRE_CODES } from './HotpepperConf';
+
 function Question(props){
-    const genres = props.genres
-    const budgetOptions = props.budgetOptions
     const filterAttr= props.filterAttr
-    const setfilterAttr=props.setRespose
+    const setFilterAttr= props.setFilterAttr
+
+    const handleBudgetChange=(event) =>{
+        setFilterAttr(prevfilterAttr => ({
+         ...prevfilterAttr,
+         "budgetCodeIdx" :parseInt(event.target.value)
+     }))
+    }
+
+    const handleCheckboxChange = (genre_code) =>{ //checkboxの入力に基づいて配列にアイテムを加えてる
+        setFilterAttr(prevfilterAttr => {
+         if (prevfilterAttr.excludeGenreCode.includes(genre_code)){
+             return{
+                 ...prevfilterAttr,
+                 "excludeGenreCode" :prevfilterAttr.excludeGenreCode.filter(g => g !== genre_code)
+             }
+         }else{
+             return{
+                 ...prevfilterAttr,
+                 "excludeGenreCode" :[...prevfilterAttr.excludeGenreCode, genre_code]
+             }
+         }
+     })
+ }
 
     return(
         <div class="question">
         <p>食べたくないジャンル</p>
-        {genres.map((genre, index) => (
-                <div key={index}>
+        {Object.keys(GENRE_CODES).map((code, idx) => (
+                <div key={code}>
                     <label>
                         <input
                             type='checkbox'
-                            value={genre}
-                            checked={filterAttr.checkedgenres.includes(genre)}
-                            onChange={() => props.handleCheckboxChange(genre)}
+                            value={code}
+                            checked={filterAttr.excludeGenreCode.includes(code)}
+                            onChange={() => handleCheckboxChange(code)}
                         />
-                        {genre}
+                        {GENRE_CODES[code]}
                     </label>
-
                 </div>
         ))
         }
@@ -29,19 +50,19 @@ function Question(props){
             予算:
             <select
             value={filterAttr.budget}
-            onChange={props.handleBudgetChange}
+            onChange={handleBudgetChange}
             >
-              {budgetOptions.map((budgetOption) => (
+              {BUDGET_CODES.map((budget_code, idx) => (
                 <option
-                key={budgetOption}
-                value={budgetOption}>
-                {budgetOption}
+                key={budget_code.code}
+                value={idx}>
+                {budget_code.min} ~ {budget_code.max}
                 </option>
               ))
 
               }
             </select>
-            円
+              円
         </div>
         </div>
     );
