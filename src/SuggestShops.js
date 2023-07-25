@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledLink = styled.a`
@@ -16,8 +16,14 @@ function ShowShop(props){
         <div>
             <div>
             <StyledLink href={shopInfo["urls"]["pc"]} rel="noopener noreferrer" target="_blank"> <h2>今日のご飯は「{shopInfo["name"]}」です。</h2></StyledLink>
-            <p>予算:{shopInfo["budget"]["average"]}円</p>
-            <p>ジャンル:{shopInfo["genre"]["name"]}</p>
+
+            {
+                shopInfo["budget"]["average"] === 0 ?
+                <p>予算: 未定</p> :
+                <p>予算: { shopInfo["budget"]["average"] }</p>
+            }
+
+            <p>ジャンル: { shopInfo["genre"]["name"] }</p>
             </div>
         </div>
     );
@@ -25,12 +31,10 @@ function ShowShop(props){
 
 function SuggestShops(props){
     const filteredShops = props.filteredShops;
-    const allShops = props.shops;
-    if (filteredShops.length == 0){
+    if (filteredShops.length === 0){
         return (
             <div>
-                アンケート結果を見たすお店がありませんでした。近くには以下のようなお店があります。
-                <ShowShop shopInfo={allShops[Math.floor(Math.random() * allShops.length)]}/>
+                アンケート結果を見たすお店がありませんでした。
             </div>
         );
     }
