@@ -7,8 +7,15 @@ function Question(props){
     const filterAttr= props.filterAttr
 
     return(
-        <div class="question">
-        <p>食べたくないジャンル</p>
+        <div className="question">
+        <p style={{fontSize : '150%'}}>食べたくないジャンル</p>
+        <div
+            style={{
+                width: '200px',
+                margin:'auto',
+                textAlign: 'left'
+            }}
+        >
         {genres.map((genre, index) => (
                 <div key={index}>
                     <label>
@@ -20,12 +27,12 @@ function Question(props){
                         />
                         {genre}
                     </label>
-
                 </div>
         ))
         }
-        <div class="budget-select">
-            予算:
+        </div>
+        <div className="budget-select">
+            <p style={{fontSize : '150%'}}>予算</p>
             <select
             value={filterAttr.budget}
             onChange={props.handleBudgetChange}

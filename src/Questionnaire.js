@@ -31,7 +31,13 @@ function Questionnaire(props){
   }
 
   return (
-    <div className="App">
+    <div
+    className="App"
+    style={{
+        textAlign : 'center',
+        backgroundColor : 'rgb(245,235,235)',
+        padding : '5%'
+    }}>
       
         <Question
           genres={ genres }
@@ -42,9 +48,13 @@ function Questionnaire(props){
           handleBudgetChange={ handleBudgetChange }
         />
 
-        <button onClick={() => {
-          props.setFilteredShops(FilterShops(props.shops, filterAttr));
-          props.setFinish(true)
+        <button
+          style={{
+            padding : '5%'
+          }}
+          onClick={() => {
+            props.setFilteredShops(FilterShops(props.shops, filterAttr));
+            props.setFinish(true)
         }}>
           今日のご飯を決める！
         </button>
