@@ -52,19 +52,26 @@ function Body(){
         return resShops;
       }
 
-
-    if (!finish){
-        return <Questionnaire
-        setFinish={setFinish}
-        filterAttr={filterAttr}
-        setFilterAttr={setFilterAttr}
-        setFilteredShops={setFilteredShops}
-        getShops={getShops}
-        />
-    }else{
-        return <SuggestShops filteredShops={ filteredShops }/>
-    }
-
+    return(
+        <div
+            style={{
+                textAlign : 'center',
+                backgroundColor : 'rgb(245,235,235)',
+                padding : '5%'
+            }}
+        >{!finish ? (
+            <Questionnaire
+            setFinish={setFinish}
+            filterAttr={filterAttr}
+            setFilterAttr={setFilterAttr}
+            setFilteredShops={setFilteredShops}
+            getShops={getShops}
+            />
+        ) : (
+            <SuggestShops filteredShops={ filteredShops }/>
+        )
+        }</div>
+    );
 }
 
 export default Body;
