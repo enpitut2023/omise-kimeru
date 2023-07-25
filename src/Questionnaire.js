@@ -10,13 +10,7 @@ function Questionnaire(props){
 
 
   return (
-    <div
-    className="App"
-    style={{
-        textAlign : 'center',
-        backgroundColor : 'rgb(245,235,235)',
-        padding : '5%'
-    }}>
+    <div className="App">
       
         <Question
           filterAttr={ filterAttr }

@@ -20,21 +20,36 @@ function ShowShop(props){
 
     return(
         <div>
-            <div>
-            <StyledLink href={shopInfo["urls"]["pc"]} rel="noopener noreferrer" target="_blank"> <h2>今日のご飯は「{shopInfo["name"]}」です。</h2></StyledLink>
-
-            {
-                shopInfo["budget"]["average"] === 0 ?
-                <p>予算: 未定</p> :
+            <StyledLink href={shopInfo["urls"]["pc"]} rel="noopener noreferrer" target="_blank">
+                <h2>{shopInfo["name"]}</h2>
+            </StyledLink>
+            <p>{ shopInfo["genre"]["name"] }</p>
+            { shopInfo["genre"]["catch"] &&
+                <p>{ shopInfo["genre"]["catch"] }</p>
+            }
+            { shopInfo["photo"]["pc"]["l"] &&
+                <img 
+                    src={ shopInfo["photo"]["pc"]["l"] }
+                    style={{
+                        width:"90%",
+                        borderRadius:"5%"
+                    }}
+                />
+            }
+            { shopInfo["open"] &&
+                <p>{shopInfo["open"]}</p>
+            }
+            { shopInfo["budget"]["average"] === 0 ?
+                <p>予算: 不明</p> :
                 <p>予算: { shopInfo["budget"]["average"] }</p>
             }
+
 
             <p>ジャンル: { shopInfo["genre"]["name"] }</p>
             <button onClick={() => { setFinish(false)}}>アンケートに戻る</button>
             <button onClick={() => { 
                setFilteredShops(filteredShops.filter(shop => shop !== shopInfo))
-            }}>もう一度お店を決め直す</button> 
-            </div>
+            }}>もう一度お店を決め直す</button>
         </div>
     );
 }
