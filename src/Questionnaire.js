@@ -8,6 +8,8 @@ function Questionnaire(props){
   const setFinish = props.setFinish
   const getShops = props.getShops
 
+  const userIndex = props.userIndex
+  const setUserIndex = props.setUserIndex
 
   return (
     <div
@@ -17,7 +19,7 @@ function Questionnaire(props){
         backgroundColor : 'rgb(245,235,235)',
         padding : '5%'
     }}>
-      
+
         <Question
           filterAttr={ filterAttr }
           setFilterAttr={ setFilterAttr }

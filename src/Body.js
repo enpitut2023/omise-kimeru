@@ -1,13 +1,16 @@
-import React , { useState } from 'react';
+import React , { useState, useEffect } from 'react';
 import SuggestShops from './SuggestShops';
 import Questionnaire from './Questionnaire';
 import axios from 'axios';
 import { BUDGET_CODES, GENRE_CODES } from './HotpepperConf';
+import UserSwitch from './UserSwitch';
 
 function Body(){
     const [finish, setFinish] = useState(false);
     const [filterAttr, setFilterAttr] = useState({"excludeGenreCode": [], "budgetCodeIdx": 3})
+    const [userAttrs, setUserAttrs] = useState([{"excludeGenreCode": [], "budgetCodeIdx": 3}])
     const [filteredShops, setFilteredShops] = useState([])
+    const [userIndex, setUserIndex] = useState(0)
 
 
     const getShops = async () => {
@@ -52,15 +55,43 @@ function Body(){
         return resShops;
       }
 
+      useEffect(() => {
+        // 当たり前に現在のユーザーの属性をfilterAttrにセットする
+        setFilterAttr(userAttrs[userIndex] || { "excludeGenreCode": [], "budgetCodeIdx": 3 });
+    }, [userIndex, userAttrs]);
+  
+    const handleQuestionnaireComplete = () => {
+      // 現在のユーザーの属性をuserAttrsに更新
+      const newUserAttrs = [...userAttrs];
+      newUserAttrs[userIndex] = filterAttr;
+      setUserAttrs(newUserAttrs);
+
+      // 最後のユーザーなら、全員のアンケートが完了していると判断
+      if (userIndex === userAttrs.length - 1) {
+          setFinish(true);
+      } else {
+          // そうでない場合、次のユーザーに移動
+          setUserIndex(userIndex + 1);
+      }
+    };
+
 
     if (!finish){
-        return <Questionnaire
+        return (
+        <>
+
+        <UserSwitch userIndex={userIndex} setUserIndex={setUserIndex}/>
+
+        <Questionnaire
         setFinish={setFinish}
         filterAttr={filterAttr}
         setFilterAttr={setFilterAttr}
         setFilteredShops={setFilteredShops}
         getShops={getShops}
         />
+        </>
+        );
+        
     }else{
         return <SuggestShops 
         filteredShops={ filteredShops } 
