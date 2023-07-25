@@ -12,6 +12,12 @@ const StyledLink = styled.a`
 // showShopは一つのお店を表示する関数(になっていく)
 function ShowShop(props){
     const shopInfo = props.shopInfo;
+    const setFinish = props.setFinish;
+    const filteredShops = props.filteredShops;
+    const setFilteredShops = props.setFilteredShops;
+    
+
+
     return(
         <div>
             <div>
@@ -24,6 +30,10 @@ function ShowShop(props){
             }
 
             <p>ジャンル: { shopInfo["genre"]["name"] }</p>
+            <button onClick={() => { setFinish(false)}}>アンケートに戻る</button>
+            <button onClick={() => { 
+               setFilteredShops(filteredShops.filter(shop => shop !== shopInfo))
+            }}>もう一度お店を決め直す</button> 
             </div>
         </div>
     );
@@ -31,6 +41,10 @@ function ShowShop(props){
 
 function SuggestShops(props){
     const filteredShops = props.filteredShops;
+    const setFilteredShops = props.setFilteredShops;
+    const setFinish = props.setFinish;
+
+
     if (filteredShops.length === 0){
         return (
             <div>
@@ -39,7 +53,11 @@ function SuggestShops(props){
         );
     }
     const shopInfo = filteredShops[Math.floor(Math.random() * filteredShops.length)];
-    return  <ShowShop shopInfo={shopInfo}/>;
+    return  <ShowShop 
+    shopInfo={shopInfo}
+    setFinish={setFinish} 
+    filteredShops={filteredShops}
+    setFilteredShops={setFilteredShops}/>;
 }
 
 export default SuggestShops;

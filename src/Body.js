@@ -98,7 +98,10 @@ function Body(){
         isGetGeolocation={isGetGeolocation}
         />
     }else{
-        return <SuggestShops filteredShops={ filteredShops }/>
+        return <SuggestShops 
+        filteredShops={ filteredShops } 
+        setFilteredShops={ setFilteredShops } 
+        setFinish={setFinish} />
     }
 
 }
