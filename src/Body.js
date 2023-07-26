@@ -78,6 +78,7 @@ function Body(){
                 lat: geoLocation["lat"],
                 lng: geoLocation["lng"],
                 count: 100,
+                range: 5,
                 budget: BUDGET_CODES[filterAttr["budgetCodeIdx"]]["code"],
                 genre: includeGenreCodes.join(",")
             }
