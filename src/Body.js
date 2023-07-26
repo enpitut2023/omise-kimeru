@@ -88,7 +88,14 @@ function Body(){
           responses.forEach((res) => {
             resShops.push(...res["data"]["results"]["shop"]);
           })
-            return resShops;
+
+          // クエリパラメータで指定したジャンルコードに一致するお店のみを抽出
+          // ホットペッパーAPIのクエリパラメータでジャンルコードを指定しても、
+          // 正しくフィルタリングされないため、ここで改めてフィルタリングしている
+          const refilterdShop = resShops.filter((shop) => (includeGenreCodes.includes(shop["genre"]["code"])))
+
+          return refilterdShop;
+
         }).catch((err) => {
           console.log(err)
         })
@@ -123,7 +130,6 @@ function Body(){
             )
             }</div>
         </>
-
     );
 
 }
