@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 
 function Header() {
   return (
-    <Navbar expand="lg" bg="warning" variant="dark">
+    <Navbar style={{backgroundColor:'wheat'}}>
       <Container className="container-center" style={{ textAlign: "center", display: 'inline-block' }}>
         <Navbar.Brand href="#" className="fw-bold">おみせきめーる</Navbar.Brand>
       </Container>
