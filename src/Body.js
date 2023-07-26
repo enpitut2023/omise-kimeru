@@ -57,8 +57,9 @@ function Body(){
         });
 
          if (includeGenreCodes.length === 0) {
-          return;
+          return [];
         }
+
 
         // ホットペッパーAPIの仕様上、ジャンルコードは2つまでしか指定できない
         // 2つずつに分割 ex: [[G001, G002], [G003, G004], ...]
