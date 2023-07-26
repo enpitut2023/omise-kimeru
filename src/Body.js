@@ -63,6 +63,7 @@ function Body(){
         // ホットペッパーAPIの仕様上、ジャンルコードは2つまでしか指定できない
         // 2つずつに分割 ex: [[G001, G002], [G003, G004], ...]
         let includeGenreCodesByTwo = [];
+        let shopNames = [];
         for (let i = 0; i < includeGenreCodes.length; i += 2) {
           includeGenreCodesByTwo.push(includeGenreCodes.slice(i, i + 2))
         }
@@ -86,16 +87,26 @@ function Body(){
         })).then((responses) => {
           let resShops = [];
           responses.forEach((res) => {
-            resShops.push(...res["data"]["results"]["shop"]);
+            if (res.data["results"]["shop"] === undefined) {
+              return;
+            }
+
+            resShops.push(...res.data["results"]["shop"]);
           })
 
-          // クエリパラメータで指定したジャンルコードに一致するお店のみを抽出
-          // ホットペッパーAPIのクエリパラメータでジャンルコードを指定しても、
-          // 正しくフィルタリングされないため、ここで改めてフィルタリングしている
-          const refilterdShop = resShops.filter((shop) => (includeGenreCodes.includes(shop["genre"]["code"])))
+          const refilterdShop = resShops.filter((shop) => {
+            // クエリパラメータで指定したジャンルコードに一致するお店のみを抽出
+            // ホットペッパーAPIのクエリパラメータでジャンルコードを指定しても、
+            // 正しくフィルタリングされないため、ここで改めてフィルタリングしている
+            if (shopNames.includes(shop["name"])) {
+              return false;
+            }
+            shopNames.push(shop["name"]);
+
+            return includeGenreCodes.includes(shop["genre"]["code"])
+          })
 
           return refilterdShop;
-
         }).catch((err) => {
           console.log(err)
         })
