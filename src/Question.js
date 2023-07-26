@@ -33,10 +33,15 @@ function Question(props){
 
     return(
         <div className="question">
-            <p style={{fontSize : '150%'}}>食べたくないジャンル</p>
+            <p style={{
+                color:"brown",
+                fontSize : '150%',
+            }}>
+                食べたくないジャンル
+            </p>
             <div
                 style={{
-                    width: '200px',
+                    width: '250px',
                     margin:'auto',
                     textAlign: 'left'
                 }}
@@ -46,6 +51,11 @@ function Question(props){
 
                         <label>
                             <input
+                                style={{
+                                    transform:"scale(2)",
+                                    margin:"8px",
+                                    marginLeft:"40px"
+                                }}
                                 type='checkbox'
                                 value={code}
                                 checked={filterAttr.excludeGenreCode.includes(code)}
@@ -57,8 +67,13 @@ function Question(props){
             ))
             }
             </div>
-            <div class="budget-select">
-                <p style={{fontSize : '150%'}}>予算</p>
+            <div className="budget-select">
+                <p style={{
+                    color:"brown",
+                    fontSize : '150%'
+                }}>
+                    予算
+                </p>
                 <select
                 value={filterAttr["budgetCodeIdx"]}
                 onChange={handleBudgetChange}

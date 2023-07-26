@@ -34,6 +34,14 @@ function ShowShop(props){
                     }}
                 />
             }
+            { shopInfo["name"] &&
+                <p style={{
+                    padding:"3%",
+                    fontSize:"150%"
+                }}>
+                    <a href={"https://www.google.com/maps/search/" + shopInfo["name"].replace("　", " ")}>場所を確認</a>
+                </p>
+            }
             { shopInfo["open"] &&
                 <p>{shopInfo["open"]}</p>
             }
@@ -42,8 +50,6 @@ function ShowShop(props){
                 <p>予算: { shopInfo["budget"]["average"] }</p>
             }
 
-
-            <p>ジャンル: { shopInfo["genre"]["name"] }</p>
             <button onClick={() => { setFinish(false)}}>アンケートに戻る</button>
             <button onClick={() => {
                setFilteredShops(filteredShops.filter(shop => shop !== shopInfo))
