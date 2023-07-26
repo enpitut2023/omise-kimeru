@@ -57,7 +57,7 @@ function Question(props){
             ))
             }
             </div>
-            <div class="budget-select">
+            <div className="budget-select">
                 <p style={{fontSize : '150%'}}>予算</p>
                 <select
                 value={filterAttr["budgetCodeIdx"]}
