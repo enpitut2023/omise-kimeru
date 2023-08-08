@@ -1,7 +1,7 @@
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
-const GeolocationModal = ({show, handleClose}) => {
+const GeolocationModal = ({show, handleClose, handleGetGeolocation}) => {
   return (
     <>
       <Modal show={show} onHide={handleClose}>
@@ -16,6 +16,9 @@ const GeolocationModal = ({show, handleClose}) => {
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             閉じる
+          </Button>
+          <Button variant="primary" onClick={handleGetGeolocation}>
+            位置情報を再取得
           </Button>
         </Modal.Footer>
       </Modal>

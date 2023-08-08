@@ -121,6 +121,7 @@ function Body(){
             <GeolocationModal
                 show={showGeoModal}
                 handleClose={() => setShowGeoModal(false)}
+                handleGetGeolocation={getGeolocation}
             />
             <div
                 style={{
