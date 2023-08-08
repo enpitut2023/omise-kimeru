@@ -121,7 +121,6 @@ function Body(){
             <GeolocationModal
                 show={showGeoModal}
                 handleClose={() => setShowGeoModal(false)}
-                handleGetGeolocation={getGeolocation}
             />
              <div>
             <h3>取得した位置情報</h3>
