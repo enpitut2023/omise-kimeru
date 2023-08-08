@@ -122,11 +122,6 @@ function Body(){
                 show={showGeoModal}
                 handleClose={() => setShowGeoModal(false)}
             />
-             <div>
-            <h3>取得した位置情報</h3>
-              <p>緯度: {geoLocation.lat}</p>
-              <p>経度: {geoLocation.lng}</p>
-            </div>
             <div
                 style={{
                     textAlign : 'center',
