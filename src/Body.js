@@ -47,7 +47,6 @@ function Body(){
             }
           )
       }else{
-        console.log("geoLocation failed")
         setIsGetGeolocation(false)
       }
   }

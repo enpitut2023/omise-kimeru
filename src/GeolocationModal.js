@@ -26,9 +26,6 @@ const GeolocationModal = ({show, handleClose, handleGetGeolocation}) => {
           <Button variant="secondary" onClick={handleClose}>
             閉じる
           </Button>
-          <Button variant="primary" onClick={() => handleGetGeolocation(setErrorMessage)}>
-            位置情報を再取得
-          </Button>
         </Modal.Footer>
       </Modal>
     </>
