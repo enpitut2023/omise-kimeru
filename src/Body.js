@@ -47,6 +47,7 @@ function Body(){
             }
           )
       }else{
+        console.log("geoLocation failed")
         setIsGetGeolocation(false)
       }
   }
@@ -123,6 +124,11 @@ function Body(){
                 handleClose={() => setShowGeoModal(false)}
                 handleGetGeolocation={getGeolocation}
             />
+             <div>
+            <h3>取得した位置情報</h3>
+              <p>緯度: {geoLocation.lat}</p>
+              <p>経度: {geoLocation.lng}</p>
+            </div>
             <div
                 style={{
                     textAlign : 'center',
