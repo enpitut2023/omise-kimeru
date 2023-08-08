@@ -72,7 +72,7 @@ function Body(){
 
         
         const apiKey = process.env.REACT_APP_API_KEY;
-        const url = `http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${apiKey}`
+        const url = `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${apiKey}`
         const resShops =  await Promise.all(includeGenreCodesByTwo.map(async (includeGenreCodes) => {
           const config = {
             adapter: axiosJsonpAdapter,
