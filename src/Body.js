@@ -1,7 +1,7 @@
 import React , { useEffect, useState } from 'react';
 import SuggestShops from './SuggestShops';
 import Questionnaire from './Questionnaire';
-import axios from './lib/Axios'
+import axios from 'axios'
 import axiosJsonpAdapter from "axios-jsonp";
 import { BUDGET_CODES, GENRE_CODES } from './HotpepperConf';
 import GeolocationModal from './GeolocationModal';
