@@ -1,7 +1,8 @@
 import React , { useEffect, useState } from 'react';
 import SuggestShops from './SuggestShops';
 import Questionnaire from './Questionnaire';
-import axios from 'axios';
+import axios from './lib/Axios'
+import axiosJsonpAdapter from "axios-jsonp";
 import { BUDGET_CODES, GENRE_CODES } from './HotpepperConf';
 import GeolocationModal from './GeolocationModal';
 
@@ -69,23 +70,23 @@ function Body(){
           includeGenreCodesByTwo.push(includeGenreCodes.slice(i, i + 2))
         }
 
-        const url = `https://omise-kimeru-backend.onrender.com/hotpepper-proxy`
+        
+        const apiKey = process.env.REACT_APP_API_KEY;
+        const url = `http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${apiKey}`
         const resShops =  await Promise.all(includeGenreCodesByTwo.map(async (includeGenreCodes) => {
           const config = {
-            headers: {
-              'Content-Type': 'application/json',
-            },
+            adapter: axiosJsonpAdapter,
             params: {
                 lat: geoLocation["lat"],
                 lng: geoLocation["lng"],
                 count: 100,
-                range: 5,
+                range: 3,
                 budget: BUDGET_CODES[filterAttr["budgetCodeIdx"]]["code"],
                 genre: includeGenreCodes.join(",")
             }
           };
 
-          return await axios.get(url, config);
+          return await axios.get(`${url}&format=jsonp`, config);
         })).then((responses) => {
           let resShops = [];
           responses.forEach((res) => {
